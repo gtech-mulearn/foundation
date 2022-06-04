@@ -35,8 +35,31 @@ const Input = () => {
         </p>
       </div>
 
+      <div className={styles.youtube}>
+        <div className={styles.y_left}>
+          <p className={styles.y_header}>
+            Come, Let's <span>make the Foundation Together.</span>
+          </p>
+          <p className={styles.y_desc}>
+            All of the past released videos are publically available to learn at
+            our Youtube Channel. New information is just at your mouse click.
+            Click & Learn!.
+          </p>
+        </div>
+        <div className={styles.y_right}>
+          <iframe
+            className={styles.y_frame}
+            src="https://www.youtube.com/embed/xaw9jf01M9g"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
       <div className={styles.badges}>
-        <p className={styles.b_header}>Collect Badges</p>
+        <p className={styles.b_header}>View & Collect Badges</p>
         <p className={styles.b_description}>
           You will be awarded with unique badges each time you complete a
           stage/assignment. You can share that with your friends and followers
