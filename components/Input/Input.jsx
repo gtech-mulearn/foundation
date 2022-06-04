@@ -36,8 +36,18 @@ const Input = () => {
       <div className={styles.badges}>
         <p className={styles.b_header}>Collect Badges</p>
         <p className={styles.b_description}>
-          You will be awarded with unique badges each time you complete a stage/assignment. You can share that with your friends and followers as you achievement. Enter you foundation program id to view your badges and download them.
+          You will be awarded with unique badges each time you complete a
+          stage/assignment. You can share that with your friends and followers
+          as you achievement. Enter you foundation program id to view your
+          badges and download them.
         </p>
+      </div>
+
+      <div className={styles.searchfield}>
+        <input type="text" name="" id="" className={styles.inputfield} />
+        <button type="submit" className={styles.btnsubmit}>
+          Search
+        </button>
       </div>
     </div>
   );
