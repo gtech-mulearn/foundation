@@ -4,19 +4,56 @@
 }
 
 .abouttfp {
+  margin-top: 5vh;
   color: white;
   font-family: "Noto Sans", sans-serif;
   text-align: center;
   font-size: 0.9rem;
 }
 
-@media only screen and (min-width: 1000px) {
+.header {
+  font-size: 1.65rem;
+  color: #fdd549;
+  font-weight: 600;
+}
+
+.roadmap {
+  text-align: center;
+}
+
+.m_header {
+  margin-top:4vh;
+  text-align: center;
+  color: #ffffff;
+  font-size: 3rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+
+.m_header span{
+  color: #61C294;
+}
+
+@media only screen and (min-width: 1280px) {
   .inputcontainer {
-    max-width: 1080px;
-    margin: 0 20%; 
+    max-width: 1280px;
+    margin: 0 20%;
   }
 
   .abouttfp {
-    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .firstsection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8vh 0;
+  }
+
+  .m_header{
+    font-size: 4.55rem;
+    text-align: left;
+    width: 35%;
   }
 }

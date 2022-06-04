@@ -1,10 +1,30 @@
 import React from "react";
 import styles from "./Input.module.css";
+import Image from "next/image";
+
+import Roadmap from "./assets/Roadmap.png";
 
 const Input = () => {
   return (
     <div className={styles.inputcontainer}>
+      <div className={styles.firstsection}>
+        <div className={styles.m_header}>
+          The Way to your <span>Future.</span>{" "}
+        </div>
+        <div className={styles.roadmap}>
+          <Image
+            src={Roadmap}
+            alt="mao"
+            width={500}
+            height={300}
+            objectFit="contain"
+          />
+        </div>
+      </div>
+
       <div className={styles.abouttfp}>
+        <p className={styles.header}>About the Program</p>
+        <br />
         The Foundation Program is a 30-Day Hybrid Bootcamp aimed at addressing
         the skill gap by helping students up-skill with a foundation program in
         programming and web development. The program aims to help the students
