@@ -22,13 +22,22 @@ const Input = () => {
         </div>
       </div>
 
-      <div className={styles.abouttfp}>
-        <p className={styles.header}>About the Program</p>
-        <br />
-        The Foundation Program is a 30-Day Hybrid Bootcamp aimed at addressing
-        the skill gap by helping students up-skill with a foundation program in
-        programming and web development. The program aims to help the students
-        build a foundational skill level to find opportunities in the Industry.
+      <div className={styles.aboutcontainer}>
+        <p className={styles.a_header}>More About Our Program.</p>
+        <p className={styles.abouttfp}>
+          The Foundation Program is a 30-Day Hybrid Bootcamp aimed at addressing
+          the skill gap by helping students up-skill with a foundation program
+          in programming and web development. The program aims to help the
+          students build a foundational skill level to find opportunities in the
+          Industry.
+        </p>
+      </div>
+
+      <div className={styles.badges}>
+        <p className={styles.b_header}>Collect Badges</p>
+        <p className={styles.b_description}>
+          You will be awarded with unique badges each time you complete a stage/assignment. You can share that with your friends and followers as you achievement. Enter you foundation program id to view your badges and download them.
+        </p>
       </div>
     </div>
   );

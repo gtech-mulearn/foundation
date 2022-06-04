@@ -1,20 +1,7 @@
 .inputcontainer {
   max-width: 1080px;
   margin: 0 5%;
-}
-
-.abouttfp {
-  margin-top: 5vh;
-  color: white;
-  font-family: "Noto Sans", sans-serif;
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-.header {
-  font-size: 1.65rem;
-  color: #fdd549;
-  font-weight: 600;
+  padding-bottom: 30vh;
 }
 
 .roadmap {
@@ -22,7 +9,7 @@
 }
 
 .m_header {
-  margin-top:4vh;
+  margin-top: 4vh;
   text-align: center;
   color: #ffffff;
   font-size: 3rem;
@@ -30,8 +17,8 @@
   font-weight: 700;
 }
 
-.m_header span{
-  color: #61C294;
+.m_header span {
+  color: #61c294;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -40,20 +27,81 @@
     margin: 0 20%;
   }
 
-  .abouttfp {
-    font-size: 1.1rem;
-  }
-
-  .firstsection{
+  .firstsection {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 8vh 0;
   }
 
-  .m_header{
+  .m_header {
     font-size: 4.55rem;
     text-align: left;
     width: 35%;
   }
+}
+
+.a_header {
+  font-size: 1.65rem;
+  color: #fdd549;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.aboutcontainer {
+  margin-top: 8vh;
+}
+
+.abouttfp {
+  margin-top: 2vh;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 1280px) {
+  .aboutcontainer {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .a_header {
+    font-size: 4rem;
+    text-align: right;
+  }
+
+  .abouttfp {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    width: 60%;
+    text-align: left;
+    line-height: 28px;
+  }
+}
+
+
+.badges{
+  margin-top: 7vh;
+}
+
+.b_header{
+  color: #DA714F;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.b_description{
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+
+  font-size: 0.9rem;
 }
