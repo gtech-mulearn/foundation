@@ -1,0 +1,22 @@
+.inputcontainer {
+  max-width: 1080px;
+  margin: 0 5%;
+}
+
+.abouttfp {
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .inputcontainer {
+    max-width: 1080px;
+    margin: 0 20%; 
+  }
+
+  .abouttfp {
+    font-size: 1rem;
+  }
+}
