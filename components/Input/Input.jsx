@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Input.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 import Roadmap from "./assets/Roadmap.png";
 
 const Input = () => {
+  const [id, setId] = useState("");
   return (
     <div className={styles.inputcontainer}>
       <div className={styles.firstsection}>
@@ -44,10 +46,20 @@ const Input = () => {
       </div>
 
       <div className={styles.searchfield}>
-        <input type="text" name="" id="" className={styles.inputfield} />
-        <button type="submit" className={styles.btnsubmit}>
-          Search
-        </button>
+        <input
+          onChange={(e) => {
+            setId(e.target.value);
+          }}
+          type="text"
+          name=""
+          id=""
+          className={styles.inputfield}
+        />
+        <Link href={`\ ${id}`}>
+          <button type="submit" className={styles.btnsubmit}>
+            Search
+          </button>
+        </Link>
       </div>
     </div>
   );
