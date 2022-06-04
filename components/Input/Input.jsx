@@ -16,7 +16,7 @@ const Input = () => {
         <div className={styles.roadmap}>
           <Image
             src={Roadmap}
-            alt="mao"
+            alt="map"
             width={500}
             height={300}
             objectFit="contain"
