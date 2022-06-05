@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>TFP - Badge Dashboard</title>
+        <title>Foundation Program</title>
         <meta
           name="description"
           content="Enter you Id and see all the badges you have acquiured in this program"

@@ -33,7 +33,11 @@ const Input = () => {
             </p>
           </div>
           <div className="btn">
-            <button className={styles.discordjoin}>Join Discord Server</button>
+            <a href="https://discord.com/invite/Jt7sv3chZP">
+              <button className={styles.discordjoin}>
+                Join Discord Server
+              </button>
+            </a>
           </div>
         </div>
       </div>
