@@ -21,7 +21,6 @@ let meta = [
 ];
 
 export default function User({ status, data }) {
-  console.log(data);
   if (status == 200) {
     return (
       <>
@@ -32,8 +31,8 @@ export default function User({ status, data }) {
             Welcome, <span>{data.name}</span>
           </p>
           <p className={styles.description}>
-            These are badges you have achieved upto now. Keep Leadning and
-            Exoloring more.
+            These are badges you have achieved with you learning efforts till now. Keep Leadning and
+            Exoloring more things.
           </p>
 
           <div className={styles.badgecontainer}>

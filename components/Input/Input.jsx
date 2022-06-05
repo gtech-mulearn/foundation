@@ -111,11 +111,11 @@ const Input = () => {
             id=""
             className={styles.inputfield}
           />
-          <Link href={`\ ${id}`}>
+          <a href={`\ ${id}`}>
             <button type="submit" className={styles.btnsubmit}>
               Search
             </button>
-          </Link>
+          </a>
         </div>
       </Fade>
     </div>
