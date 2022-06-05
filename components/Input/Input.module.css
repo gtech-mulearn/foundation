@@ -14,11 +14,44 @@
   color: #ffffff;
   font-size: 3rem;
   font-family: "Noto Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .m_header span {
   color: #61c294;
+}
+
+.subtxt {
+  color: white;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  margin-top: -0.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.m_numbers {
+  margin: 0.5rem;
+}
+
+.m_numbers span {
+  color: #688de2;
+  font-weight: 600;
+}
+
+.discordjoin {
+  display: block;
+  margin: auto;
+  margin-top: 1.5rem;
+  background-color: #688de2;
+  border-radius: 25px;
+  color: #1b1b1b;
+  padding: 0.75rem 1.45rem;
+  border: none;
+  font-weight: 600;
+  font-family: "Noto Sans", sans-serif;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -27,17 +60,28 @@
     margin: 0 20%;
   }
 
+  .discordjoin {
+    margin: 0;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+  }
+
   .firstsection {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
     margin: 8vh 0;
   }
 
   .m_header {
-    font-size: 4.55rem;
+    font-size: 4rem;
     text-align: left;
-    width: 35%;
+    width: 60%;
+  }
+
+  .subtxt {
+    justify-content: left;
+    font-size: 1.1rem;
   }
 }
 

@@ -10,17 +10,31 @@ const Input = () => {
   return (
     <div className={styles.inputcontainer}>
       <div className={styles.firstsection}>
-        <div className={styles.m_header}>
-          The Way to your <span>Future.</span>{" "}
-        </div>
         <div className={styles.roadmap}>
           <Image
             src={Roadmap}
             alt="map"
-            width={500}
-            height={300}
-            objectFit="contain"
+            width={1000}
+            height={650}
+            objectFit="fill"
           />
+        </div>
+        <div className={styles.m_left}>
+          <p className={styles.m_header}>
+            Learn the <span>Foundation</span> And Make Your <span>Future.</span>{" "}
+          </p>
+          <div className={styles.subtxt}>
+            <p className={styles.m_numbers}>
+              {" "}
+              <span>200+</span> Active Learner
+            </p>
+            <p className={styles.m_numbers}>
+              <span>Unlimited</span> Resources
+            </p>
+          </div>
+          <div className="btn">
+            <button className={styles.discordjoin}>Join Discord Server</button>
+          </div>
         </div>
       </div>
 
