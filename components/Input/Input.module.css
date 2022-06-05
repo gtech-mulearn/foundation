@@ -1,5 +1,5 @@
 .inputcontainer {
-  max-width: 1080px;
+  max-width: 1280px;
   margin: 0 5%;
   padding-bottom: 10vh;
 }
@@ -57,7 +57,8 @@
 @media only screen and (min-width: 1280px) {
   .inputcontainer {
     max-width: 1280px;
-    margin: 0 20%;
+    display: block;
+    margin: auto;
   }
 
   .discordjoin {
@@ -117,6 +118,7 @@
   .a_header {
     font-size: 4rem;
     text-align: right;
+    width: 60%;
   }
 
   .abouttfp {
@@ -202,9 +204,10 @@
   color: #ffffff;
   font-family: "Noto Sans", sans-serif;
   font-size: 1.75rem;
-  font-weight: 600;
+  font-weight: 800;
   text-align: center;
   margin-bottom: 2vh;
+ 
 }
 
 .y_header span {
@@ -244,6 +247,7 @@
   }
 
   .y_header {
+    width: 70%;
     text-align: left;
     font-size: 3.25rem;
   }
@@ -256,6 +260,6 @@
 
   .y_frame {
     height: 35vh;
-    width: 26vw;
+    width: 25vw;
   }
 }

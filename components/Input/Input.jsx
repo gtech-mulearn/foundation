@@ -39,7 +39,7 @@ const Input = () => {
       </div>
 
       <div className={styles.aboutcontainer}>
-        <p className={styles.a_header}>More About Our Program.</p>
+        <p className={styles.a_header}>Learn More About Our Program.</p>
         <p className={styles.abouttfp}>
           The Foundation Program is a 30-Day Hybrid Bootcamp aimed at addressing
           the skill gap by helping students up-skill with a foundation program
