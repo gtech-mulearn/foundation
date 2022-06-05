@@ -2,6 +2,7 @@ import Airtable from "airtable";
 import Image from "next/image";
 import styles from "../styles/id.module.css";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 let base = new Airtable({ apiKey: process.env.airtableKey }).base(
   process.env.tfpBase
@@ -41,14 +42,11 @@ export default function User({ status, data }) {
                 console.log(item.url);
                 return (
                   <>
-                    <div
-                      key={item.id}
-                      
-                    >
+                    <div key={item.id}>
                       <Image
                         src={item.url}
                         style={{
-                          boxShadow: "2px 1px 20px 0px rgba(255,255,255,0.56);"
+                          boxShadow: "2px 1px 20px 0px rgba(255,255,255,0.56);",
                         }}
                         alt="badge"
                         width={300}
@@ -62,6 +60,8 @@ export default function User({ status, data }) {
               }
             })}
           </div>
+
+          <Footer />
         </div>
       </>
     );

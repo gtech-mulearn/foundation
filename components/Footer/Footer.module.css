@@ -1,0 +1,16 @@
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social {
+  margin: 0 0.5rem;
+}
+
+.copyright {
+ padding: 1rem 0 3rem 0;
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+}
