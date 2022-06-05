@@ -107,6 +107,7 @@ const Input = () => {
               setId(e.target.value);
             }}
             type="text"
+            placeholder="Enter you Foundation Program ID"
             name=""
             id=""
             className={styles.inputfield}

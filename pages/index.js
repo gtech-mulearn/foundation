@@ -14,7 +14,7 @@ export default function Home() {
           name="description"
           content="Enter you Id and see all the badges you have acquiured in this program"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className={styles.main}>

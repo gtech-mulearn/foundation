@@ -1,5 +1,6 @@
 import Airtable from "airtable";
 import Image from "next/image";
+import Head from "next/head";
 import styles from "../styles/id.module.css";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
@@ -24,6 +25,14 @@ export default function User({ status, data }) {
   if (status == 200) {
     return (
       <>
+        <Head>
+          <title>Foundation Program</title>
+          <meta
+            name="description"
+            content="Enter you Id and see all the badges you have acquiured in this program"
+          />
+          <link rel="icon" href="/favicon.png" />
+        </Head>
         <div className={styles.main}>
           <Navbar />
 
@@ -31,8 +40,8 @@ export default function User({ status, data }) {
             Welcome, <span>{data.name}</span>
           </p>
           <p className={styles.description}>
-            These are badges you have achieved with you learning efforts till now. Keep Leadning and
-            Exoloring more things.
+            These are badges you have achieved with you learning efforts till
+            now. Keep Leadning and Exoloring more things.
           </p>
 
           <div className={styles.badgecontainer}>
