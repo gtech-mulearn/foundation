@@ -1,3 +1,7 @@
+.footercontainer{
+  margin-top: 4vh;
+}
+
 .logos {
   display: flex;
   align-items: center;

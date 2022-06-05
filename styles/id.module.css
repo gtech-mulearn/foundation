@@ -32,3 +32,11 @@
   margin-bottom: 6vh;
 }
 
+@media only screen and (min-width: 1280px) {
+  .badgecontainer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 55vh;
+  }
+}

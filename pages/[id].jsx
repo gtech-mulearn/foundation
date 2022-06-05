@@ -37,7 +37,7 @@ export default function User({ status, data }) {
           <Navbar />
 
           <p className={styles.name}>
-            Welcome, <span>{data.name}</span>
+            Congratulations, <span>{data.name}</span>
           </p>
           <p className={styles.description}>
             These are badges you have achieved with you learning efforts till
