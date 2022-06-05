@@ -13,7 +13,7 @@ const Footer = () => {
       <div className={styles.footercontents}>
         <div className={styles.logos}>
           <div className={styles.social}>
-            <a href="https://www.instagram.com/gtechmulearn/" target="_blank">
+            <a href="https://www.instagram.com/gtechmulearn/" rel="noreferrer" target="_blank">
               <Image
                 src={instagarm}
                 alt="instagram"
@@ -24,7 +24,7 @@ const Footer = () => {
             </a>
           </div>
           <div className={styles.social}>
-            <a href="https://twitter.com/GtechMulearn" target="_blank">
+            <a href="https://twitter.com/GtechMulearn" rel="noreferrer" target="_blank">
               <Image
                 src={twitter}
                 alt="twitter"
@@ -35,7 +35,7 @@ const Footer = () => {
             </a>
           </div>
           <div className={styles.social}>
-            <a href="https://www.youtube.com/c/mulearn" target="_blank">
+            <a href="https://www.youtube.com/c/mulearn" rel="noreferrer" target="_blank">
               <Image
                 src={youtube}
                 alt="youtube"

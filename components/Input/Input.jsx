@@ -68,12 +68,12 @@ const Input = () => {
         <Fade left>
           <div className={styles.y_left}>
             <p className={styles.y_header}>
-              Come, Let's <span>make the Foundation Together.</span>
+              Come, Let &apos;s <span>make the Foundation Together.</span>
             </p>
             <p className={styles.y_desc}>
               All of the past released videos are publically available to learn
               at our Youtube Channel. New information is just at your mouse
-              click. Click & Learn!.
+              click. Click and Learn!.
             </p>
           </div>
         </Fade>
@@ -83,9 +83,9 @@ const Input = () => {
               className={styles.y_frame}
               src="https://www.youtube.com/embed/xaw9jf01M9g"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </Fade>
