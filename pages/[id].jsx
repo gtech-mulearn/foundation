@@ -29,7 +29,7 @@ export default function User({ status, data }) {
           <title>Foundation Program</title>
           <meta
             name="description"
-            content="Enter you Id and see all the badges you have acquiured in this program"
+            content="Welcome to The Foundation Program Website, Enter your foundaton program Id and view all the badges you have aquired untill now in the program"
           />
           <link rel="icon" href="/favicon.png" />
         </Head>
