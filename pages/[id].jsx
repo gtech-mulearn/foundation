@@ -10,6 +10,16 @@ let base = new Airtable({ apiKey: process.env.airtableKey }).base(
 );
 let meta = [
   {
+    id: "learner",
+    check: "discord_status",
+    image: "learner-badge",
+  },
+  {
+    id: "scratch",
+    check: "tfp-scratch",
+    image: "scratch-badge",
+  },
+  {
     id: "cmd",
     check: "tfp-command-line",
     image: "cmd-badge",
