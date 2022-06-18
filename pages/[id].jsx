@@ -60,7 +60,12 @@ export default function User({ status, data }) {
                 console.log(item.url);
                 return (
                   <>
-                    <div key={item.id}>
+                    <div
+                      key={item.id}
+                      style={{
+                        margin: "auto",
+                      }}
+                    >
                       <Image
                         src={item.url}
                         style={{
@@ -72,7 +77,6 @@ export default function User({ status, data }) {
                         objectFit="contain"
                       />
                     </div>
-                    <br />
                   </>
                 );
               }
