@@ -34,6 +34,27 @@ let meta = [
 ];
 
 export default function User({ status, data }) {
+  if ((status = 500 || data == undefined)) {
+    console.log(status);
+    return (
+      <>
+        <CustomizedSnackbars />
+        <Head>
+          <title>Foundation Program - Error</title>
+          <meta
+            name="description"
+            content="Welcome to The Foundation Program Website, Enter your foundaton program Id and view all the badges you have aquired untill now in the program"
+          />
+          <link rel="icon" href="/favicon.png" />
+        </Head>
+        <div className={styles.main}>
+          <Navbar />
+          <Input />
+          <Footer />
+        </div>
+      </>
+    );
+  }
   if (status == 200) {
     return (
       <>
@@ -85,26 +106,6 @@ export default function User({ status, data }) {
             })}
           </div>
 
-          <Footer />
-        </div>
-      </>
-    );
-  } else {
-    console.log(status)
-    return (
-      <>
-        <CustomizedSnackbars />
-        <Head>
-          <title>Foundation Program - Error</title>
-          <meta
-            name="description"
-            content="Welcome to The Foundation Program Website, Enter your foundaton program Id and view all the badges you have aquired untill now in the program"
-          />
-          <link rel="icon" href="/favicon.png" />
-        </Head>
-        <div className={styles.main}>
-          <Navbar />
-          <Input />
           <Footer />
         </div>
       </>
