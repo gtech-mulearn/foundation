@@ -4,6 +4,8 @@ import Head from "next/head";
 import styles from "../styles/id.module.css";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import Input from "../components/Input/Input";
+import CustomizedSnackbars from "../components/SnackBar/SnackBar";
 
 let base = new Airtable({ apiKey: process.env.airtableKey }).base(
   process.env.tfpBase
@@ -88,7 +90,25 @@ export default function User({ status, data }) {
       </>
     );
   } else {
-    return <div>Error!</div>;
+    console.log(status)
+    return (
+      <>
+        <CustomizedSnackbars />
+        <Head>
+          <title>Foundation Program - Error</title>
+          <meta
+            name="description"
+            content="Welcome to The Foundation Program Website, Enter your foundaton program Id and view all the badges you have aquired untill now in the program"
+          />
+          <link rel="icon" href="/favicon.png" />
+        </Head>
+        <div className={styles.main}>
+          <Navbar />
+          <Input />
+          <Footer />
+        </div>
+      </>
+    );
   }
 }
 
@@ -96,14 +116,14 @@ export const getServerSideProps = async (context) => {
   let user_id = context.params.id;
   let prom = new Promise((resolve, reject) => {
     base("Primer").find(user_id, function (err, record) {
-      let data = {};
-      data.name = record.get("Name");
-      data.tags = [];
       if (err) {
         resolve({
           status: 404,
         });
       }
+      let data = {};
+      data.name = record.get("Name");
+      data.tags = [];
       meta.forEach((task) => {
         console.log(task);
         let url = record.get(task.image);
