@@ -115,29 +115,31 @@ export const getServerSideProps = async (context) => {
   let user_id = context.params.id;
   let prom = new Promise((resolve, reject) => {
     base("Primer").find(user_id, function (err, record) {
+      console.log(err);
       if (err) {
         resolve({
           status: 404,
         });
-      }
-      let data = {};
-      data.name = record.get("Name");
-      data.tags = [];
-      meta.forEach((task) => {
-        console.log(task);
-        let url = record.get(task.image);
-        if (url == undefined) {
-          url = null;
-        }
-        data.tags.push({
-          id: task.id,
-          url: url,
+      } else {
+        let data = {};
+        data.name = record.get("Name");
+        data.tags = [];
+        meta.forEach((task) => {
+          console.log(task);
+          let url = record.get(task.image);
+          if (url == undefined) {
+            url = null;
+          }
+          data.tags.push({
+            id: task.id,
+            url: url,
+          });
         });
-      });
-      resolve({
-        status: 200,
-        data,
-      });
+        resolve({
+          status: 200,
+          data,
+        });
+      }
     });
   });
 
