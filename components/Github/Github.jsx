@@ -63,54 +63,72 @@ const Github = () => {
             {data1.map((item) => {
               return (
                 <>
-                  <div key={item.id} className={styles.contributor}>
-                    <Avatar
-                      alt={item.login}
-                      src={item.avatar_url}
-                      sx={{ width: 66, height: 66 }}
-                    />
-                    <p className={styles.name}>
-                      {item.login.length > 9
-                        ? item.login.substring(0, 6) + "..."
-                        : item.login}
-                    </p>
-                  </div>
+                  <a
+                    href={item.html_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div key={item.id} className={styles.contributor}>
+                      <Avatar
+                        alt={item.login}
+                        src={item.avatar_url}
+                        sx={{ width: 66, height: 66 }}
+                      />
+                      <p className={styles.name}>
+                        {item.login.length > 9
+                          ? item.login.substring(0, 6) + "..."
+                          : item.login}
+                      </p>
+                    </div>
+                  </a>
                 </>
               );
             })}
             {data2.map((item) => {
               return (
                 <>
-                  <div key={item.id} className={styles.contributor}>
-                    <Avatar
-                      alt={item.login}
-                      src={item.avatar_url}
-                      sx={{ width: 66, height: 66 }}
-                    />
-                    <p className={styles.name}>
-                      {item.login.length > 9
-                        ? item.login.substring(0, 6) + "..."
-                        : item.login}
-                    </p>
-                  </div>
+                  <a
+                    href={item.html_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div key={item.id} className={styles.contributor}>
+                      <Avatar
+                        alt={item.login}
+                        src={item.avatar_url}
+                        sx={{ width: 66, height: 66 }}
+                      />
+                      <p className={styles.name}>
+                        {item.login.length > 9
+                          ? item.login.substring(0, 6) + "..."
+                          : item.login}
+                      </p>
+                    </div>
+                  </a>
                 </>
               );
             })}
             {data3.map((item) => {
               return (
                 <>
-                  <div key={item.id} className={styles.contributor}>
-                    <Avatar
-                      alt={item.login}
-                      src={item.avatar_url}
-                      sx={{ width: 66, height: 66 }}
-                    />
-                    <p className={styles.name}>
-                      {item.login.length > 9
-                        ? item.login.substring(0, 6) + "..."
-                        : item.login}
-                    </p>
-                  </div>
+                  <a
+                    href={item.html_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div key={item.id} className={styles.contributor}>
+                      <Avatar
+                        alt={item.login}
+                        src={item.avatar_url}
+                        sx={{ width: 66, height: 66 }}
+                      />
+                      <p className={styles.name}>
+                        {item.login.length > 9
+                          ? item.login.substring(0, 6) + "..."
+                          : item.login}
+                      </p>
+                    </div>
+                  </a>
                 </>
               );
             })}
