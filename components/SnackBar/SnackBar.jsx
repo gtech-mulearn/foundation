@@ -22,7 +22,7 @@ export default function CustomizedSnackbars() {
     <Stack spacing={2} sx={{ width: "100%" }}>
       <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="error" sx={{ width: "100%" }}>
-          User Not Found, Enter Correct ID.
+          Page/User Not Found, Please Check Again!
         </Alert>
       </Snackbar>
     </Stack>
