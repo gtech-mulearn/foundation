@@ -57,7 +57,7 @@ const Github = () => {
           <p className={styles.mtagline}>
             As a part of the Foundation Program, Over 200 learners successfully
             created a pull request satisfying all the requirements of
-            assignments which were later merged into the organisation's
+            assignments which were later merged into the organisation&apos;s
             repository. And here we present our Cool Contributors.
           </p>
           <div className={styles.contributors_container}>
