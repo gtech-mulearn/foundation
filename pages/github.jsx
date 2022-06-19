@@ -16,33 +16,30 @@ const github = () => {
       )
       .then(function (response) {
         setData1(response.data);
-        console.log(response.data);
       })
       .catch(function (error) {
         // handle error
         console.log(error);
       });
 
-      axios
+    axios
       .get(
         "https://api.github.com/repos/gtech-mulearn/TFP-Github-Task/contributors?per_page=100&page=2"
       )
       .then(function (response) {
         setData2(response.data);
-        console.log(response.data);
       })
       .catch(function (error) {
         // handle error
         console.log(error);
       });
 
-      axios
+    axios
       .get(
         "https://api.github.com/repos/gtech-mulearn/TFP-Github-Task/contributors?per_page=100&page=3"
       )
       .then(function (response) {
         setData3(response.data);
-        console.log(response.data);
       })
       .catch(function (error) {
         // handle error
@@ -78,8 +75,6 @@ const github = () => {
                   </>
                 );
               })}
-            </div>
-            <div className={styles.contributors_container}>
               {data2.map((item) => {
                 return (
                   <>
@@ -98,8 +93,6 @@ const github = () => {
                   </>
                 );
               })}
-            </div>
-            <div className={styles.contributors_container}>
               {data3.map((item) => {
                 return (
                   <>
