@@ -54,7 +54,14 @@ const github = () => {
           <Navbar />
           <div className={styles.gcontainer}>
             <p className={styles.m_header}>
-              <span>Contributions</span> by our <span>Cool Learners.</span>{" "}
+              <span>GitHub Contributions</span> by our{" "}
+              <span>Cool Learners.</span>{" "}
+            </p>
+            <p className={styles.mtagline}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, vitae
+              omnis! Dicta dolor labore officiis, natus tempora ullam impedit
+              sit velit itaque delectus sequi illum, explicabo fugit odit, ea
+              laborum?
             </p>
             <div className={styles.contributors_container}>
               {data1.map((item) => {
@@ -118,7 +125,20 @@ const github = () => {
       </>
     );
   } else {
-    return <div>Loading....</div>;
+    return (
+      <>
+        <main className={styles.main}>
+          <Navbar />
+          <div className={styles.gcontainer}>
+            <p className={styles.m_header}>
+              <span>GitHub Contributions</span> by our{" "}
+              <span>Cool Learners.</span>{" "}
+            </p>
+          </div>
+          <Footer />
+        </main>
+      </>
+    );
   }
 };
 

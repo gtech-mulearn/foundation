@@ -10,16 +10,30 @@
 }
 
 .m_header {
+  margin: auto;
+  display: block;
   margin-top: 4vh;
   text-align: center;
+  width: 90%;
   color: #ffffff;
   font-size: 2.25rem;
   font-family: "Noto Sans", sans-serif;
   font-weight: 800;
 }
 
+.mtagline {
+  margin: auto;
+  display: block;
+  text-align: center;
+  width: 90%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
 .m_header span {
-  color: #fdd549
+  color: #fdd549;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -49,7 +63,6 @@
 .contributor {
   display: block;
   margin: auto;
-  margin: 1rem 0;
 }
 
 .name {
@@ -69,6 +82,20 @@
   .name {
     margin-bottom: 0.75rem;
     font-size: 0.9rem;
+  }
+
+
+  .m_header {
+    margin-top: 4vh;
+    text-align: center;
+    width: 80%;
+    font-size: 3.25rem;
+  }
+  
+  .mtagline {
+    width: 80%;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
   }
 }
 
