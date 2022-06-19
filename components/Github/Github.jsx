@@ -55,9 +55,10 @@ const Github = () => {
             <span>GitHub Contributions</span> by our <span>Cool Learners.</span>{" "}
           </p>
           <p className={styles.mtagline}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, vitae
-            omnis! Dicta dolor labore officiis, natus tempora ullam impedit sit
-            velit itaque delectus sequi illum, explicabo fugit odit, ea laborum?
+            As a part of the Foundation Program, Over 200 learners successfully
+            created a pull request satisfying all the requirements of
+            assignments which were later merged into the organisation's
+            repository. And here we present our Cool Contributors.
           </p>
           <div className={styles.contributors_container}>
             {data1.map((item) => {
