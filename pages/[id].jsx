@@ -38,7 +38,7 @@ export default function User({ status, data }) {
     return (
       <>
         <Head>
-          <title>Foundation Program</title>
+          <title>The Foundation Program</title>
           <meta
             name="description"
             content="Welcome to The Foundation Program Website, Enter your foundaton program Id and view all the badges you have aquired untill now in the program"
@@ -52,8 +52,10 @@ export default function User({ status, data }) {
             Congratulations, <span>{data.name}</span>
           </p>
           <p className={styles.description}>
-            These are badges you have achieved with you learning efforts till
-            now. Keep Leadning and Exoloring more things.
+            Woohoo! That’s one hell of a collection of badges you have there!
+            Feel like there are missing badges? If so, you either haven’t
+            completed an assignment or we missed your submission, in which case
+            do ping us on Discord.
           </p>
 
           <div className={styles.badgecontainer}>
@@ -94,7 +96,7 @@ export default function User({ status, data }) {
       <>
         <CustomizedSnackbars />
         <Head>
-          <title>Foundation Program - Error</title>
+          <title>The Foundation Program - Error</title>
           <meta
             name="description"
             content="Welcome to The Foundation Program Website, Enter your foundaton program Id and view all the badges you have aquired untill now in the program"

@@ -28,6 +28,9 @@
   color: white;
   font-family: "Poppins", sans-serif;
   text-align: center;
+  display: block;
+  margin: auto;
+  width: 80vw;
   margin-bottom: 6vh;
 }
 
@@ -35,6 +38,12 @@
   .badgecontainer {
     justify-content: center;
     grid-template-columns: 30% 30%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .description {
+    width: 60vw;
   }
 }
 

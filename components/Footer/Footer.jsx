@@ -46,7 +46,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <p className={styles.copyright}>2022 © µLearn Foundation Program</p>
+        <p className={styles.copyright}>2022 © The Foundation Program</p>
       </div>
     </div>
   );

@@ -22,12 +22,13 @@ const Input = () => {
 
         <div className={styles.m_left}>
           <p className={styles.m_header}>
-            Learn the <span>Foundation</span> And Make Your <span>Future.</span>{" "}
+            Build the perfect <span>Foundation</span> Secure your{" "}
+            <span>Future.</span>
           </p>
           <div className={styles.subtxt}>
             <p className={styles.m_numbers}>
               {" "}
-              <span>200+</span> Active Learner
+              <span>200+</span> Active Learners
             </p>
             <p className={styles.m_numbers}>
               <span>Unlimited</span> Resources
@@ -44,7 +45,9 @@ const Input = () => {
       </div>
 
       <div className={styles.aboutcontainer}>
-        <p className={styles.a_header}>Learn More About Our Program.</p>
+        <p className={styles.a_header}>
+          Learn more about The Foundation Program
+        </p>
 
         <p className={styles.abouttfp}>
           The Foundation Program is a 30-Day Hybrid Bootcamp aimed at addressing
@@ -58,12 +61,13 @@ const Input = () => {
       <div className={styles.youtube}>
         <div className={styles.y_left}>
           <p className={styles.y_header}>
-            Come, Let &apos;s <span>make the Foundation Together.</span>
+            Together let &apos;s <span>craft your foundation!</span>
           </p>
           <p className={styles.y_desc}>
-            All of the past released videos are publically available to learn at
-            our Youtube Channel. New information is just at your mouse click.
-            Click and Learn!.
+            We believe in free education and do not limit access to our
+            resources in any manner. All session recordings are available on our
+            YouTube Channel. You are just a click away from learning something
+            new and interesting. Click and Learn!
           </p>
         </div>
 
@@ -80,12 +84,13 @@ const Input = () => {
       </div>
 
       <div className={styles.badges}>
-        <p className={styles.b_header}>View & Collect Badges</p>
+        <p className={styles.b_header}>View your TFP Profile</p>
         <p className={styles.b_description}>
-          You will be awarded with unique badges each time you complete a
-          stage/assignment. You can share that with your friends and followers
-          as you achievement. Enter you foundation program id to view your
-          badges and download them.
+          For each TFP-task that you complete successfully, you will be awarded
+          with Karma points to add to your collection and some bad-ass badges to
+          show off to your Social Circles. Enter your unique TFP-id to view the
+          badges you’ve earned. Feel free to tag us when you flaunt them on your
+          socials.
         </p>
       </div>
 
@@ -95,7 +100,7 @@ const Input = () => {
             setId(e.target.value);
           }}
           type="text"
-          placeholder="Enter you Foundation Program ID"
+          placeholder="Enter your unique TFP-id"
           name=""
           id=""
           className={styles.inputfield}
@@ -106,6 +111,10 @@ const Input = () => {
           </button>
         </a>
       </div>
+      <br />
+      <p className={styles.b_description}>
+        Tip: Check the first mail you received from us for your unique TFP-id
+      </p>
     </div>
   );
 };
