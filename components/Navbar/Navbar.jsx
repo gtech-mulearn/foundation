@@ -2,10 +2,12 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import Image from "next/image";
 import Mulearn from "./assets/Mulearn White.png";
+import Link from "next/link";
+
 
 const Navbar = () => {
   return (
-    <a href="/">
+    <Link href="/">
       <div className={styles.nav_container}>
         <Image
           src={Mulearn}
@@ -23,7 +25,7 @@ const Navbar = () => {
           Program
         </p>
       </div>
-    </a>
+    </Link>
   );
 };
 

@@ -94,9 +94,9 @@ const Input = () => {
             repository click the below link to view the contributors.
           </p>
           <div className="btn">
-            <a href="/github">
+            <Link href="/github">
               <button className={styles.githubjoin}>Check it out!</button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
