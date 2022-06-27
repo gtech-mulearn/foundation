@@ -83,6 +83,24 @@ const Input = () => {
         </div>
       </div>
 
+      <div className={styles.githubcontainer}>
+        <div className={styles.g_center}>
+          <p className={styles.g_header}>
+            <span>Contributions</span> by our <span>Cool</span> learners
+          </p>
+          <p className={styles.g_tagline}>
+            Over 200 Learners completed the Github Assignment and successfully
+            merged their pull request with the organisation &apos;s github
+            repository click the below link to view the contributors.
+          </p>
+          <div className="btn">
+            <a href="/github">
+              <button className={styles.githubjoin}>Check it out!</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className={styles.badges}>
         <p className={styles.b_header}>View your TFP Profile</p>
         <p className={styles.b_description}>

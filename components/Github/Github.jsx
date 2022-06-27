@@ -47,7 +47,7 @@ const Github = () => {
       });
   }, []);
 
-  if (data3) {
+  if (data3 && data2 && data1) {
     return (
       <>
         <div className={styles.gcontainer}>
