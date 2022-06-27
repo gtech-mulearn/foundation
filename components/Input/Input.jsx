@@ -64,7 +64,7 @@ const Input = () => {
             Together let &apos;s <span>craft your foundation!</span>
           </p>
           <p className={styles.y_desc}>
-            We believe in free education and do not limit access to our
+            We believe in Democratizing and Demonetizing Education and do not limit access to our
             resources in any manner. All session recordings are available on our
             YouTube Channel. You are just a click away from learning something
             new and interesting. Click and Learn!
@@ -91,7 +91,7 @@ const Input = () => {
           <p className={styles.g_tagline}>
             Over 200 Learners completed the Github Assignment and successfully
             merged their pull request with the organisation &apos;s github
-            repository click the below link to view the contributors.
+            repository. Click the link to have a look at our contributors.
           </p>
           <div className="btn">
             <Link href="/github">
