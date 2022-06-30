@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 import Image from "next/image";
-import Mulearn from "./assets/Mulearn White.png";
+import Mulearn from "./assets/Mulearn.png";
 import Link from "next/link";
 
 
