@@ -34,11 +34,15 @@ const Input = () => {
               <span>Unlimited</span> Resources
             </p>
           </div>
-          <div className="btn">
+          <div className={styles.buttons}>
             <a href="https://discord.com/invite/Jt7sv3chZP">
               <button className={styles.discordjoin}>
                 Join Discord Server
               </button>
+            </a>
+
+            <a href="https://mulearn.notion.site/The-Foundation-Program-f8ba5f4b2f174aeb8ff60155d52d7b44">
+              <button className={styles.notion}>Checkout Notion Page</button>
             </a>
           </div>
         </div>
@@ -64,10 +68,10 @@ const Input = () => {
             Together let &apos;s <span>craft your foundation!</span>
           </p>
           <p className={styles.y_desc}>
-            We believe in Democratizing and Demonetizing Education and do not limit access to our
-            resources in any manner. All session recordings are available on our
-            YouTube Channel. You are just a click away from learning something
-            new and interesting. Click and Learn!
+            We believe in Democratizing and Demonetizing Education and do not
+            limit access to our resources in any manner. All session recordings
+            are available on our YouTube Channel. You are just a click away from
+            learning something new and interesting. Click and Learn!
           </p>
         </div>
 

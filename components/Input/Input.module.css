@@ -41,6 +41,11 @@
   font-weight: 600;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
 .discordjoin {
   display: block;
   margin: auto;
@@ -54,6 +59,20 @@
   font-family: "Noto Sans", sans-serif;
 }
 
+.notion {
+  display: block;
+  margin: auto;
+  margin-top: 1.5rem;
+  background-color: #61c294;
+  border-radius: 25px;
+  color: #1b1b1b;
+  padding: 0.75rem 1.45rem;
+
+  border: none;
+  font-weight: 600;
+  font-family: "Noto Sans", sans-serif;
+}
+
 @media only screen and (min-width: 1280px) {
   .inputcontainer {
     max-width: 1280px;
@@ -61,10 +80,21 @@
     margin: auto;
   }
 
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
   .discordjoin {
     margin: 0;
     margin-top: 1.5rem;
     font-size: 0.9rem;
+  }
+  .notion {
+    margin: 0;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    margin-left: 1rem;
   }
 
   .firstsection {
