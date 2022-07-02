@@ -40,8 +40,8 @@ const Input = () => {
                 Join Discord Server
               </button>
             </a>
-
-            <a href="https://mulearn.notion.site/The-Foundation-Program-f8ba5f4b2f174aeb8ff60155d52d7b44">
+            
+            <a target="_blank" rel="noopener noreferrer"  href="https://mulearn.notion.site/The-Foundation-Program-f8ba5f4b2f174aeb8ff60155d52d7b44">
               <button className={styles.notion}>Checkout Notion Page</button>
             </a>
           </div>
