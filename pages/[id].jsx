@@ -31,6 +31,11 @@ let meta = [
     check: "tfp-git-github",
     image: "git-badge",
   },
+  {
+    id: "html",
+    check: "tfp-html-css",
+    image: "html-badge",
+  }
 ];
 
 export default function User({ status, data }) {
@@ -133,6 +138,7 @@ export const getServerSideProps = async (context) => {
             url = null;
           }
           data.tags.push({
+            key: task.id,
             id: task.id,
             url: url,
           });
