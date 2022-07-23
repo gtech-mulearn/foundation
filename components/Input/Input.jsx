@@ -127,7 +127,7 @@ const Input = () => {
           id=""
           className={styles.inputfield}
         />
-        <a href={`\ ${id}`}>
+        <a href={`/profile/${id}`}>
           <button type="submit" className={styles.btnsubmit}>
             Search
           </button>

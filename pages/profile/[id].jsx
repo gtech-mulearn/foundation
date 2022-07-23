@@ -1,11 +1,11 @@
 import Airtable from "airtable";
 import Image from "next/image";
 import Head from "next/head";
-import styles from "../styles/id.module.css";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
-import Input from "../components/Input/Input";
-import CustomizedSnackbars from "../components/SnackBar/SnackBar";
+import styles from "../../styles/id.module.css";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import Input from "../../components/Input/Input";
+import CustomizedSnackbars from "../../components/SnackBar/SnackBar";
 
 let base = new Airtable({ apiKey: process.env.airtableKey }).base(
   process.env.tfpBase
