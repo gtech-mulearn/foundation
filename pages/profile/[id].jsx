@@ -50,8 +50,6 @@ export default function User({ status, data }) {
     let twitterBase = "https://twitter.com/intent/tweet?text=";
     let waBase = "https://api.whatsapp.com/send?text=";
 
-    let id = "recD3ivxu6A313MRa";
-
     let twitterContent = encodeURI(
       `Check out my Achievements with The Foundation Program by @GtechMulearn\n\nhttps://foundation.mulearn.org/profile/${id}\n\n&hashtags=TFPmulearn`
     );
@@ -116,12 +114,12 @@ export default function User({ status, data }) {
           </div>
 
           <div className={styles.share}>
-            <Link href={twitter}>
+            <a target="_blank" href={twitter} rel="noopener noreferrer">
               <button className={styles.twitter}>Share to Twitter</button>
-            </Link>
-            <Link href={wa}>
+            </a>
+            <a target="_blank" href={wa} rel="noopener noreferrer">
               <button className={styles.whatsapp}>Share to Whatsapp</button>
-            </Link>
+            </a>
           </div>
 
           <Footer />
