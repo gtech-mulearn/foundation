@@ -66,7 +66,6 @@ export default function User({ status, data }) {
           <div className={styles.badgecontainer}>
             {data.tags.map((item) => {
               if (item["url"] != null) {
-                console.log(item.url);
                 return (
                   <>
                     <div
