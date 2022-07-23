@@ -24,6 +24,36 @@
   grid-template-columns: 100%;
 }
 
+.twitter {
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 1.5rem;
+  background-color: #1494cf;
+  border-radius: 25px;
+  color: #1b1b1b;
+  padding: 0.75rem 1.45rem;
+  border: none;
+  font-weight: 600;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.whatsapp {
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 1.5rem;
+  background-color: #31ccba;
+  border-radius: 25px;
+  color: #1b1b1b;
+  padding: 0.75rem 1.45rem;
+  border: none;
+  font-weight: 600;
+  font-family: "Noto Sans", sans-serif;
+}
+
+
+
 .description {
   color: white;
   font-family: "Poppins", sans-serif;
@@ -35,6 +65,15 @@
 }
 
 @media only screen and (min-width: 481px) {
+  .share{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .whatsapp, .twitter{
+    margin: 2rem  1rem;
+  }
   .badgecontainer {
     justify-content: center;
     grid-template-columns: 30% 30%;

@@ -6,6 +6,9 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Input from "../../components/Input/Input";
 import CustomizedSnackbars from "../../components/SnackBar/SnackBar";
+import { useRouter } from "next/router";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 let base = new Airtable({ apiKey: process.env.airtableKey }).base(
   process.env.tfpBase
@@ -35,11 +38,32 @@ let meta = [
     id: "html",
     check: "tfp-html-css",
     image: "html-badge",
-  }
+  },
 ];
 
 export default function User({ status, data }) {
   if (status == 200) {
+    const router = useRouter();
+    const { id } = router.query;
+    const [twitter, setTwitter] = useState("");
+    const [wa, setWa] = useState("");
+    useEffect(() => {
+      let twitterBase = "https://twitter.com/intent/tweet?text=";
+      let waBase = "https://api.whatsapp.com/send?text=";
+
+      let id = "recD3ivxu6A313MRa";
+
+      let twitterContent = encodeURI(
+        `Check out my Achievements with The Foundation Program by @GtechMulearn\n\nhttps://foundation.mulearn.org/profile/${id}\n\n&hashtags=TFPmulearn`
+      );
+
+      let waContent = encodeURI(
+        `Check out my Achievements with The Foundation Program by GTech Mulearn\n\nhttps://foundation.mulearn.org/profile/${id}`
+      );
+
+      setTwitter(`${twitterBase}${twitterContent}`);
+      setWa(`${waBase}${waContent}`);
+    }, []);
     return (
       <>
         <Head>
@@ -89,6 +113,15 @@ export default function User({ status, data }) {
                 );
               }
             })}
+          </div>
+
+          <div className={styles.share}>
+            <Link href={twitter}>
+              <button className={styles.twitter}>Share to Twitter</button>
+            </Link>
+            <Link href={wa}>
+              <button className={styles.whatsapp}>Share to Whatsapp</button>
+            </Link>
           </div>
 
           <Footer />
