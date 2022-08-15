@@ -39,6 +39,11 @@ let meta = [
     check: "tfp-html-css",
     image: "html-badge",
   },
+  {
+    id: "js",
+    check: "tfp-javascript",
+    image: "js-badge",
+  },
 ];
 
 export default function User({ status, data }) {
