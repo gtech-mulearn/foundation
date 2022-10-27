@@ -56,7 +56,7 @@ const Input = () => {
         <p className={styles.abouttfp}>
           The Foundation Program is a 30-Day Hybrid Bootcamp aimed at addressing
           the skill gap by helping students up-skill with a foundation program
-          in programming and web development. The program aims to help the
+          in programming and web development. The program aims to help 
           students build a foundational skill level to find opportunities in the
           Industry.
         </p>
@@ -65,7 +65,7 @@ const Input = () => {
       <div className={styles.youtube}>
         <div className={styles.y_left}>
           <p className={styles.y_header}>
-            Together let &apos;s <span>craft your foundation!</span>
+            Together lets <span>craft your foundation!</span>
           </p>
           <p className={styles.y_desc}>
             We believe in Democratizing and Demonetizing Education and do not
@@ -93,8 +93,8 @@ const Input = () => {
             <span>Contributions</span> by our <span>Cool</span> learners
           </p>
           <p className={styles.g_tagline}>
-            Over 200 Learners completed the Github Assignment and successfully
-            merged their pull request with the organisation &apos;s github
+            200+ Learners completed the Github Assignment and successfully
+            merged their pull request with the organisation &apos;s Github
             repository. Click the link to have a look at our contributors.
           </p>
           <div className="btn">

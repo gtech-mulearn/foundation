@@ -55,7 +55,7 @@ const Github = () => {
             <span>GitHub Contributions</span> by our <span>Cool Learners.</span>{" "}
           </p>
           <p className={styles.mtagline}>
-            As a part of the Foundation Program, Over 200 learners successfully
+            As part of The Foundation Program, Over 200 learners successfully
             created a pull request satisfying all the requirements of
             assignments which were later merged into the organisation&apos;s
             repository. And here we present our Cool Contributors.
