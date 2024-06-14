@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Input.module.css";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 
 import Roadmap from "./assets/Roadmap.png";
 
@@ -87,7 +87,7 @@ const Input = () => {
         </div>
       </div>
 
-      <div className={styles.githubcontainer}>
+      {/* <div className={styles.githubcontainer}>
         <div className={styles.g_center}>
           <p className={styles.g_header}>
             <span>Contributions</span> by our <span>Cool</span> learners
@@ -136,7 +136,7 @@ const Input = () => {
       <br />
       <p className={styles.b_description}>
         Tip: Check the first mail you received from us for your unique TFP-id
-      </p>
+      </p> */}
     </div>
   );
 };
