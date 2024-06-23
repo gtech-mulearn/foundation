@@ -61,6 +61,7 @@
     /* overflow: hidden; */
     /* background-color: rgb(113, 3, 3); */
     padding-left: 2rem;
+    margin-top: 5rem;
 
     
 }
@@ -273,6 +274,7 @@
     .heroTextContainer{
         flex-wrap: wrap;
         padding: 0;
+        margin-top: unset;
     }
     .heroLogotWrapper{
         padding-top: 6rem;
