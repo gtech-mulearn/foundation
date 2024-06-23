@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+
+#levelInfo {
+  display: flex;
+  margin-top: 10rem;
+  flex-direction: column;
+  align-items: center;
+}
+.levelCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 10.5rem;
+}
+.startsSoonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+.startsSoonContainer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 4rem;
+  background-color: #212121;
+  border-radius: 1rem;
+  gap: 10px;
+  font-weight: 600;
+  color: #d9d9d9;
+}
+.levelTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.levelTextContainer h1 {
+  color: #f0263c;
+  font-size: 3.5rem;
+  font-family: "Paytone One", sans-serif;
+  text-align: center;
+}
+.levelTextContainer h2 {
+  font-size: 2.6rem;
+  color: #3455ff;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.levelTextContainer p {
+  font-size: 2rem;
+  color: #f8f8f8;
+  width: 36rem;
+  text-align: center;
+  font-weight: 400;
+  line-height: 2.7rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0px;
+}
+.levelTextContainer img {
+  position: absolute;
+  right: -15vw;
+  top: -20px;
+  scale: 0.8;
+}
+@media only screen and (max-width: 1250px) {
+  .levelCardContainer {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .levelTextContainer h1 {
+    font-size: 2rem;
+  }
+  .levelTextContainer h2 {
+    font-size: 1.8rem;
+  }
+  .levelTextContainer p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    width: 72%;
+  }
+  .levelTextContainer img {
+    position: relative;
+    top: -60px;
+    right: unset;
+  }
+}
