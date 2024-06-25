@@ -26,6 +26,9 @@ const LevelInfo: React.FC = () => {
         <p>Skill gap hinders employment despite job availability. Address this crucial issue now.</p>
         <Image src={tabletScreen} alt=""/>
       </div>
+      <div className={styles.horizontalTextContainer}>
+        <h1>BECOME ZERO TO ONE-SKILL LEVEL</h1>
+      </div>
     </section>
   );
 };

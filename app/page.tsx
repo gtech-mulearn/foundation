@@ -1,3 +1,4 @@
+import TaskInfo from "@/modules/TaskInfo/TaskInfo";
 import Landingpage from "../modules/LandingPage/landing"
 import LevelInfo from "../modules/LevelInfo/levelInfo"
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <main>
      <Landingpage />
      <LevelInfo />
+     <TaskInfo />
     </main>
   );
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Russo+One&display=swap');
 
 #levelInfo {
   display: flex;
@@ -67,12 +67,31 @@
   top: -20px;
   scale: 0.8;
 }
+.horizontalTextContainer{
+  padding: 2rem;
+  width: 100vw;
+  background-color: #161618;
+  margin-top: 3rem;
+}
+.horizontalTextContainer h1{
+  font-size: 4vw ;
+  text-align: center;
+  font-family: "Paytone One", sans-serif;
+  letter-spacing: 1px;
+  color: #F8F8F8;
+}
 @media only screen and (max-width: 1250px) {
   .levelCardContainer {
     padding: 0 1rem;
   }
 }
 @media only screen and (max-width: 850px) {
+  .startsSoonContainer {
+    margin-bottom: 3rem;
+  }
+  .levelTextContainer{
+    height: 46vh;
+  }
   .levelTextContainer h1 {
     font-size: 2rem;
   }
@@ -88,5 +107,19 @@
     position: relative;
     top: -60px;
     right: unset;
+  }
+  .horizontalTextContainer{
+   margin-top: unset;
+  }
+  @media only screen and (max-width: 520px) {
+    #levelInfo {
+      margin-top: 6rem;
+    }
+    .levelTextContainer{
+      height: 58vh;
+    }
+    .horizontalTextContainer{
+      margin-top: 4rem;
+    }
   }
 }
