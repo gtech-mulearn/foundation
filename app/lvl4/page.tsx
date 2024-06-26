@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from './level.module.css'
+import styles from '../lvl1/level.module.css'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import LevelBox2 from '../../components/LevelBox2'
@@ -37,9 +37,6 @@ export default function Lvl3() {
             <div className={styles.floating} style={{left: '4%', top: '0%', transform: 'rotate(40deg)'}}><Image src={floatImg} alt='stars' fill={true}/></div>
             <div className={styles.floating} style={{right: '4%', bottom: '-20%', transform: 'rotate(40deg)'}}><Image src={floatImg} alt='stars' fill={true}/></div>
             <div className={styles.floating} style={{left: '2%', bottom: '-40%', transform: 'rotate(-10deg)'}}><Image src={floatImg} alt='stars' fill={true}/></div>
-            <div className={styles.floating} style={{right: '4%', bottom: '-90%', transform: 'rotate(-10deg)'}}><Image src={floatImg} alt='stars' fill={true}/></div>
-            <div className={styles.floating} style={{left: '3%', bottom: '-100%', transform: 'rotate(10deg)'}}><Image src={floatImg} alt='stars' fill={true}/></div>
-        
         </div>
       </div>
       <div className={styles.footContainer}>

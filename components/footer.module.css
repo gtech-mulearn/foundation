@@ -1,0 +1,73 @@
+.footerContainer {
+  width: 80%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  box-shadow: 0 -0.5rem 8rem rgba(255, 255, 255, 0.15);
+  margin-top: 40vh;
+  padding: 5rem;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+}
+
+.mainContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.Flogo {
+  width: 4rem;
+  margin-right: 4.75rem;
+}
+
+.muLogo {
+  width: 9rem;
+}
+
+.socialContainer ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.socialContainer ul li {
+  background-color: white;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 900px) {
+  .footerContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footerContainer {
+    width: 100%;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+  }
+
+  .socialContainer {
+    display: none;
+  }
+
+  .copyright {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+}

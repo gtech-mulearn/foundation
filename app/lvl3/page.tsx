@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from './level.module.css'
+import styles from '../lvl1/level.module.css'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import LevelBox2 from '../../components/LevelBox2'
