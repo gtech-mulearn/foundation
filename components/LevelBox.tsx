@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from './levelbox.module.css'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 interface DynamicComponentProps {
     backgroundColor1: string;
     backgroundColor2: string;
     text1: string;
     text2: string;
-    imageUrl: string;
+    imageUrl: StaticImageData;
   }
 
   const LevelBox: React.FC<DynamicComponentProps> = ({
