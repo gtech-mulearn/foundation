@@ -35,6 +35,10 @@ const Input = () => {
             </p>
           </div>
           <div className={styles.buttons}>
+            <a href="https://mulearn.org/r/tfpregistration">
+              <button className={styles.reg}>Register Now</button>
+            </a>
+
             <a href="https://discord.com/invite/Jt7sv3chZP">
               <button className={styles.discordjoin}>
                 Join Discord Server
