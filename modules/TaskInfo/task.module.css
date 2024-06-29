@@ -1,0 +1,87 @@
+#taskInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.taskCardContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4rem 10rem;
+  max-width: 1200px;
+}
+
+.taskTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 500px;
+}
+
+.taskTextContainer p {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 3.5rem;
+  color: #f4f4f4;
+  letter-spacing: 1px;
+}
+
+.taskTextContainer p span {
+  position: relative;
+}
+
+.taskTextContainer p span::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 110px;
+  top: -10px;
+  left: -10px;
+  background-image: url(../../assets//TaskInfo/text-bg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.taskTextContainer button {
+  background-color: #61c294;
+  padding: 0.2rem 1.8rem;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px) {
+  .taskCardContainer {
+    padding: 4rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .taskCardContainer {
+    padding: 3rem 1rem;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .taskTextContainer {
+    max-width: 350px;
+  }
+
+  .taskTextContainer p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .taskTextContainer p span::after {
+    width: 125px;
+    height: 70px;
+    top: -5px;
+    left: -15px;
+  }
+}

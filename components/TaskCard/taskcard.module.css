@@ -1,0 +1,100 @@
+.taskCard {
+  max-width: 400px;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 20px;
+}
+
+.taskCard:last-child {
+  max-width: unset;
+  width: 832px;
+  height: 300px;
+  gap: 0rem;
+  padding: 1rem;
+}
+
+.taskCard:nth-child(3) p,
+.taskCard:nth-child(4) p {
+  width: 250px;
+}
+
+.taskCard h1 {
+  font-size: 5rem;
+  font-family: "Russo One", sans-serif;
+  -webkit-text-stroke: 4px white;
+  color: transparent;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.langContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.langContainer img {
+  height: 80px;
+}
+
+.taskCard p {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+
+@media only screen and (max-width: 950px) {
+  .taskCard {
+    width: 40vw;
+    height: 48vw;
+  }
+  .taskCard h1 {
+    font-size: 8vw;
+    -webkit-text-stroke: 3px white;
+  }
+  .taskCard p {
+    font-size: 3.4vw;
+    line-height: 4vw;
+  }
+  .langContainer img {
+    height: 8vw;
+  }
+  .taskCard:nth-child(3) p,
+  .taskCard:nth-child(4) p {
+    width: 25vw;
+  }
+  .taskCard:last-child {
+    width: 83.2vw;
+    height: 30vw;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .taskCard {
+    width: 42vw;
+    height: 50vw;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .taskCard h1 {
+    -webkit-text-stroke: 2px white;
+  }
+  .taskCard p {
+    letter-spacing: 1px;
+    font-size: 4vw;
+    line-height: 4.2vw;
+  }
+  .taskCard:nth-child(3) p,
+  .taskCard:nth-child(4) p {
+    width: unset;
+  }
+  .taskCard:last-child {
+    width: 88vw;
+    height: 35vw;
+  }
+}
