@@ -12,7 +12,7 @@
     border-radius: 50px;
     display: flex;
     flex-wrap: wrap;
-    padding: 5vw 0;
+    padding: 15vw 0;
 }
 .wallLeft{
     width: 48%;
@@ -127,7 +127,7 @@
     .wallLeft h1 span::after{
         width: 31vw;
         height: 4vw;
-        bottom: -8px;
+        bottom: -5px;
         
     }
     .wallRight{

@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+#badgeCollection {
+  padding: 0 8vw;
+  padding-bottom: 5rem;
+  background-color: #161618;
+  display: flex;
+  justify-content: center;
+}
+.wrapperBox {
+  width: 100%;
+  background-color: black;
+  border-radius: 50px;
+  display: flex;
+  padding: 9rem 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.badgeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.badgeContainer h1 {
+  font-size: 4.3vw;
+  color: white;
+  text-align: center;
+  font-family: "Paytone One", sans-serif;
+  letter-spacing: 0.2px;
+}
+.badgeContainer h1 span {
+  font-family: "Paytone One", sans-serif;
+  position: relative;
+}
+.badgeContainer h1 span::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-image: url("/images/underline.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  /* z-index: 0; */
+  /* background-color: red; */
+}
+.badgeContainer .subHeads {
+  position: relative;
+}
+.badgeContainer .subHeads img {
+  position: absolute;
+  top: -2vw;
+  right: -13vw;
+  width: 10vw;
+}
+.badgeContainer .subHeads h3 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1.75vw;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 1.5rem;
+}
+.badgeContainer .subHeads h2 {
+  font-size: 2vw;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 0.2rem;
+}
+.inputContainer {
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  /* margin: 0 auto; */
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  outline: 4px solid transparent;
+  transition: 0.3s;
+}
+.inputContainer:focus-within {
+  border: 1px solid #2381ef;
+  outline: 4px solid #c1dafb;
+}
+.inputContainer label {
+  padding: 0 1rem;
+  display: grid;
+  place-items: center;
+}
+.inputContainer input {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  outline: none;
+}
+.inputContainer input::placeholder {
+  font-family: "Inter", sans-serif;
+}
+.BadgeParticlesContainer img {
+  position: absolute;
+}
+.BadgeParticlesContainer img:nth-child(1) {
+  top: 4vw;
+  left: 7vw;
+}
+.BadgeParticlesContainer img:nth-child(2) {
+  top: 2vw;
+  right: 7vw;
+}
+.BadgeParticlesContainer img:nth-child(3) {
+  bottom: 7vw;
+  left: 4vw;
+}
+.BadgeParticlesContainer img:nth-child(4) {
+  bottom: 7vw;
+  right: 12vw;
+}
+@media only screen and (max-width: 850px) {
+  #badgeCollection {
+    padding: 5vw;
+  }
+  .BadgeParticlesContainer img {
+    scale: 0.7;
+  }
+  .wrapperBox {
+    padding: 5rem;
+  }
+  .badgeContainer h1 {
+    font-size: 2.5rem;
+  }
+  .badgeContainer .subHeads {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .badgeContainer .subHeads img {
+    position: unset;
+  }
+  .badgeContainer .subHeads h3 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  .badgeContainer .subHeads h2 {
+    margin-top: unset;
+    font-size: 1.25rem;
+  }
+  .inputContainer {
+    width: 50vw;
+    margin-top: 2rem;
+  }
+  .inputContainer input {
+    height: 2.2rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .wrapperBox {
+    padding: 2rem;
+  }
+  .badgeContainer h1 {
+    font-size: 5rem 3rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .badgeContainer .subHeads {
+    gap: 0.5rem;
+  }
+  .inputContainer {
+    width: 60vw;
+  }
+  .BadgeParticlesContainer img {
+    scale: 0.6;
+  }
+  .BadgeParticlesContainer img:nth-child(1) {
+    top: 1vw;
+    left: 1.7vw;
+  }
+  .BadgeParticlesContainer img:nth-child(2) {
+    top: 1vw;
+    right: 3.5vw;
+  }
+
+  .BadgeParticlesContainer img:nth-child(4) {
+    bottom: 3.5vw;
+    right: 2vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .inputContainer {
+    margin-bottom: 2rem;
+    width: 70vw;
+  }
+  .BadgeParticlesContainer img {
+    scale: 0.5;
+  }
+  .BadgeParticlesContainer img:nth-child(1) {
+    top: 0.2vw;
+    left: -2vw;
+  }
+  .BadgeParticlesContainer img:nth-child(2) {
+    top: 1vw;
+    right: -2vw;
+  }
+  .BadgeParticlesContainer img:nth-child(3) {
+    scale: 0.7;
+  }
+
+  .BadgeParticlesContainer img:nth-child(4) {
+    bottom: 1vw;
+    right: 1vw;
+  }
+}
