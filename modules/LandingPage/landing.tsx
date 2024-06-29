@@ -51,7 +51,7 @@ export default function landing() {
           </div>
         </div>
         <div className={styles.scrollBtnContainer}>
-          <a href="">
+          <a href="#levelInfo">
             <button>
               <Image src={Arrow} alt="arrow" /> scroll
             </button>

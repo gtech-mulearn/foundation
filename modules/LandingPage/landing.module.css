@@ -8,7 +8,7 @@
     flex-direction: column;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    box-shadow: 0px 0px 20px rgba(246, 241, 241, 0.063);
+    box-shadow: 0px 0px 100px rgba(246, 241, 241, 0.2);
 }
 .bg{
     position: absolute;
@@ -281,9 +281,7 @@
     }
     .heroTextWrapper{
         width: 95%;
-        /* background-color: #F36B37; */
         justify-content: center;
-        /* height: 100%; */
         overflow: hidden;
         padding: 0;
     }
@@ -320,12 +318,10 @@
 
   @media only screen and (max-width: 720px) {
     .bg{
-        /* background-size: 200%; */
         background-position: 100px 100px;
     }
     .textContainer .left{
         width: 100%;
-        /* background-color: #332202; */
         justify-content: flex-start;
         margin-top: 2rem;
     }
@@ -352,9 +348,7 @@
         left: -20px;
         scale: .4;
     }
-    /* .exploreCircle{
-        top: 100vh;
-    } */
+
 }
 @media only screen and (max-width: 520px) {
     .bg{

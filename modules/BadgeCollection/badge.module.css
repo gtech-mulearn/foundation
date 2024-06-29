@@ -43,8 +43,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  /* z-index: 0; */
-  /* background-color: red; */
 }
 .badgeContainer .subHeads {
   position: relative;
@@ -75,7 +73,6 @@
   display: flex;
   justify-content: center;
   background-color: white;
-  /* margin: 0 auto; */
   margin-top: 3rem;
   margin-bottom: 1rem;
   border-radius: 20px;
@@ -98,6 +95,7 @@
   height: 3rem;
   border: none;
   outline: none;
+  background-color: white;
 }
 .inputContainer input::placeholder {
   font-family: "Inter", sans-serif;

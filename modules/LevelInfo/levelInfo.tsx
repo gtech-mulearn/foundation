@@ -8,7 +8,7 @@ import online from "../../assets/LevelInfo/Online.svg";
 import tabletScreen from "../../assets/LevelInfo/ai tablet screen.svg"
 const LevelInfo: React.FC = () => {
   return (
-    <section id={styles.levelInfo}>
+    <section id="levelInfo" className={styles.levelInfo}>
       <div className={styles.levelCardContainer}>
         {data.map((item: DataItem) => (
           <LevelCard key={item.id} {...item} />
