@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from '../lvl1/level.module.css'
-import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
-import LevelBox2 from '../../components/LevelBox2'
+import Navbar from '../../components/navbar/Navbar'
+import Footer from '../../components/footer/Footer'
+import LevelBox2 from '../../components/levelbox2/LevelBox2'
 import { GoArrowLeft } from "react-icons/go";
 import floatImg from '../../assets/level3/pathYellow.svg'
 

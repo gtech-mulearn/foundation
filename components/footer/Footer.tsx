@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './footer.module.css'
 import Image from 'next/image'
-import logo from './assets/logo_small.png'
-import mulogo from './assets/mulearn.png'
+import logo from '../assets/logo_small.png'
+import mulogo from '../assets/mulearn.png'
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
