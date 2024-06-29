@@ -1,0 +1,119 @@
+.navContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 11vh;
+  background-color: #1e1e1e;
+}
+
+.navLogoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.navLogo {
+  position: relative;
+  width: 12rem;
+  margin: 2rem;
+}
+
+.navLogoContainer > span {
+  width: 1px;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navLevelsContainer {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin-right: 10rem;
+}
+
+.navLevels {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.navLevels:hover {
+  color: #688de2;
+  text-decoration: underline;
+  text-underline-offset: 0.6rem;
+  text-decoration-thickness: 0.18rem;
+}
+
+.navSocialsContainer {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding-right: 4rem;
+}
+
+.navSocials {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .navLevelsContainer {
+    margin-left: 1rem;
+    margin-right: 3rem;
+    gap: 2rem;
+  }
+  .navSocialsContainer {
+    padding-right: 2rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navSocials p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navLogo {
+    width: 8rem;
+    margin: 1rem;
+  }
+
+  .navSocialsContainer {
+    display: none;
+  }
+
+  .navLevelsContainer {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navLevelsContainer {
+    gap: 0.8rem;
+  }
+
+  .navLevels {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navLevelsContainer {
+    display: none;
+  }
+
+  .navLogoContainer > span {
+    display: none;
+  }
+}

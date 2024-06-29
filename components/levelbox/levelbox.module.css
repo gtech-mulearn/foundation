@@ -1,0 +1,43 @@
+.backgroundBox {
+  width: 45%;
+  border-radius: 2.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title,
+.subtitle {
+  margin: 1rem 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.1rem 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 10%;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+}
+
+.img {
+  position: relative;
+  width: 65%;
+}
+
+@media screen and (max-width: 800px) {
+  .backgroundBox {
+    width: 90%;
+  }
+
+  .img {
+    width: 50%;
+  }
+}
