@@ -1,5 +1,7 @@
+'use client';
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation';
 import styles from '../lvl1/level.module.css'
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
@@ -9,7 +11,7 @@ import floatImg from '../../assets/level3/pathYellow.svg'
 
 
 export default function Lvl3() {
-
+  const router = useRouter();
   const backgroundColor2 = '#FDD549';
   const textWithLineBreak ='They’ll learn about GitHub, open-source contributions, and formal email writing.\n \n Sharing earned badges on social media will earn 25 points each.'
 
@@ -18,7 +20,7 @@ export default function Lvl3() {
       <Navbar />
       <section className={styles.sectionContainer}>
         <div className={styles.header}>
-          <div className={styles.backButton}><div className={styles.rotate}>
+          <div className={styles.backButton} onClick={() => router.back()}><div className={styles.rotate}>
             <GoArrowLeft   size='3em' color={backgroundColor2}/>
           </div></div>
           <div className={styles.titleContainer}>
@@ -50,9 +52,8 @@ export default function Lvl3() {
             <div className={styles.floating} style={{left: '2%', bottom: '-40%', transform: 'rotate(-10deg)'}}><Image src={floatImg} alt='stars' fill={true}/></div>
         </div>
       </div>
-      <div className={styles.footContainer}>
-          <Footer />
-        </div>
+  
+          <Footer bgColor='#0f0f0f'/>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import styles from "./landing.module.css";
 import Image from "next/image";
 import Logo from "../../assets/Home/Logo.svg";
 import verticalDivider from "../../assets/Home/Vertical Divider.png";
-import FtpLogo from "../../assets/Home/foundation logo.svg";
+import FtpLogo from "../../assets/Home/foundation logo.png";
 import HeroText from "../../assets/Home/Hero Text.svg";
 import tlp from "../../assets/Home/topleftparticle.svg";
 import trp from "../../assets/Home/toprightparticle.svg";
@@ -19,11 +19,11 @@ export default function landing() {
       <div className={styles.bg}></div>
       <section id={styles.hero}>
         <nav className={styles.navBar}>
-          <div className={styles.logo}>
+          <a href="https://mulearn.org/" target="blank" className={styles.logo}>
             <Image src={Logo} alt="logo" />
             <Image src={verticalDivider} alt="VD" />
             <h3>The Foundation Program</h3>
-          </div>
+          </a>
         </nav>
         <div className={styles.heroTextContainer}>
           <div className={styles.heroLogotWrapper}>

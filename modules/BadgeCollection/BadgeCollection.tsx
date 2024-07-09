@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./badge.module.css";
 import searchIcon from "@/assets/BadgeCollection/search.svg"
-import tfpImg from "@/assets/BadgeCollection/tfpImg.svg"
+import tfpImg from "@/assets/BadgeCollection/tfpImg.png"
 import topLeftParticle from "@/assets/BadgeCollection/particle-top-left.svg"
 import topRightParticle from "@/assets/BadgeCollection/particle-top-right.svg"
 import bottomLeftParticle from "@/assets/BadgeCollection/particle-bottom-left.svg"

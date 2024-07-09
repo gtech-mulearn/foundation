@@ -59,6 +59,8 @@
   width: 100%;
   justify-content: center;
   padding: 2.5rem 0;
+  /* background-color: red; */
+  margin-bottom: 3rem;
 }
 
 .box {
