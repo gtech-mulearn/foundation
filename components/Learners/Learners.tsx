@@ -74,7 +74,7 @@ export function Learners2() {
           />
         </a>
       ))}
-      <a href="" className={styles.learnerButton} >
+      <a href="/github" className={styles.learnerButton} >
         +99
       </a>
     </div>
