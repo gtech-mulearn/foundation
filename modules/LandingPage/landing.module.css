@@ -216,6 +216,7 @@
     /* background-color: red; */
     display: flex;
     justify-content: center;
+    gap: 2rem;
 }
 .exploreCircle{
     position: relative;
@@ -246,6 +247,18 @@
 }
 .exploreRotate{
     animation: rotate infinite linear 5s;
+}
+
+.regNowBtn{
+    color: rgb(31, 29, 29);
+    background-color: #688DE2;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    margin-top: 4rem;
+    font-weight: 600;
+}
+.regNowBtn:hover{
+    opacity: .8;
 }
 @keyframes rotate{
     from{

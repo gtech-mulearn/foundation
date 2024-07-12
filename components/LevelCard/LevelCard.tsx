@@ -22,6 +22,7 @@ const LevelCard: React.FC<LevelCardProps> = ({
   url,
 }) => {
   return (
+  <Link href={`/${url}`}>
     <div className={styles.levelCard} style={{ backgroundColor: bgcolor }}>
       <div className={styles.levelTop}>
         <div className={styles.levelLeft}>
@@ -33,13 +34,14 @@ const LevelCard: React.FC<LevelCardProps> = ({
         </div>
       </div>
       <div className={styles.levelBottom}>
-      <Link href={`/${url}`}>
+      
           <button>
             <Image src={arrow} alt="arrow" />
           </button>
-        </Link>
+        
       </div>
     </div>
+    </Link>
   );
 };
 

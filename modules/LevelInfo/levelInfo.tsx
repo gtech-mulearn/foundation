@@ -16,7 +16,7 @@ const LevelInfo: React.FC = () => {
       </div>
       <div className={styles.startsSoonContainer}>
         <button>
-          Starts Soon
+          More Coming Soon
           <Image src={online} alt="online" />
         </button>
       </div>
@@ -26,9 +26,9 @@ const LevelInfo: React.FC = () => {
         <p>Skill gap hinders employment despite job availability. Address this crucial issue now.</p>
         <Image src={tabletScreen} alt=""/>
       </div>
-      <div className={styles.horizontalTextContainer}>
+      {/* <div className={styles.horizontalTextContainer}>
         <h1>BECOME ZERO TO ONE-SKILL LEVEL</h1>
-      </div>
+      </div> */}
     </section>
   );
 };

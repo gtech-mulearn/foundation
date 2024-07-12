@@ -67,10 +67,32 @@ export default function landing() {
         </div>
       </section>
       <div className={styles.exploreMoreContainer}>
-        <div className={styles.exploreCircle}>
+        {/* <div className={styles.exploreCircle}>
           <Image src={explore} alt="explor" className={styles.exploreRotate} />
           <Image src={playbtn} alt="play" className={styles.explorePlay} />
-        </div>
+        </div> */}
+        <a
+          href="https://mulearn.org/r/tfpregistration"
+          className={styles.regNowBtn}
+          style={{ backgroundColor: "#F36B37" }}
+        >
+          Register Now
+        </a>
+
+        <a
+          href="https://mulearn.notion.site/The-Foundation-Program-f8ba5f4b2f174aeb8ff60155d52d7b44"
+          className={styles.regNowBtn}
+          style={{ backgroundColor: "#61C294" }}
+        >
+          Checkout Notion Page
+        </a>
+        <a
+          href="https://discord.mulearn.org"
+          className={styles.regNowBtn}
+          style={{ backgroundColor: " #688DE2" }}
+        >
+          Join Discord
+        </a>
       </div>
     </>
   );

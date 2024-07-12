@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <Landingpage />
       <LevelInfo />
-      <TaskInfo />
+      {/* <TaskInfo /> */}
       <WallOfFame />
       <BadgeCollection />
       <Footer bgColor="#161618" />
