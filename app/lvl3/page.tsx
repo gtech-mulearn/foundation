@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation';
 import styles from '../lvl1/level.module.css'
+import { status } from "../data"
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import LevelBox2 from '../../components/levelbox2/LevelBox2'
@@ -14,7 +15,12 @@ export default function Lvl3() {
   const router = useRouter();
   const backgroundColor2 = '#FDD549';
   const textWithLineBreak ='They’ll learn about GitHub, open-source contributions, and formal email writing.\n \n Sharing earned badges on social media will earn 25 points each.'
-
+  const item =status.find(d => d.level === 3);
+  if (item && item.lock) {
+    return (
+      <h1 className={styles.comingSoonh1}>Coming Soon!</h1>
+    );
+  }
   return (
     <div className={styles.main}>
       <Navbar />

@@ -1,8 +1,13 @@
-// data.ts
 import lvlImg1 from "../../assets/LevelInfo/lvl1-img.svg";
 import lvlImg2 from "../../assets/LevelInfo/lvl2-img.svg";
 import lvlImg3 from "../../assets/LevelInfo/lvl3-img.svg";
 import lvlImg4 from "../../assets/LevelInfo/lvl4-img.svg";
+import { status } from "../../app/data"; // Make sure this path is correct
+
+const lvl1Status = status.find(d => d.level === 1)?.lock;
+const lvl2Status = status.find(d => d.level === 2)?.lock;
+const lvl3Status = status.find(d => d.level === 3)?.lock;
+const lvl4Status = status.find(d => d.level === 4)?.lock;
 
 export interface DataItem {
   id: number;
@@ -10,19 +15,19 @@ export interface DataItem {
   heading: string;
   description: string;
   bgcolor: string;
-  url:string
-  lock:boolean
+  url: string;
+  lock: boolean;
 }
 
 const data: DataItem[] = [
   {
     id: 1,
-    image: lvlImg4,
+    image: lvlImg1,
     heading: "Week 0",
     description: "Analyse, visualise, choose tools",
     bgcolor: "#F36B37",
-    url:"lvl1",
-    lock:false
+    url: "lvl1",
+    lock: lvl1Status ?? true 
   },
   {
     id: 2,
@@ -30,8 +35,8 @@ const data: DataItem[] = [
     heading: "Level 2",
     description: "Understanding how the web works",
     bgcolor: "#688DE2",
-    url:"lvl2",
-    lock:true
+    url: "lvl2",
+    lock: lvl2Status ?? true 
   },
   {
     id: 3,
@@ -39,17 +44,17 @@ const data: DataItem[] = [
     heading: "Level 3",
     description: "Polish your profile and ace interviews",
     bgcolor: "#FDD549",
-    url:"lvl3",
-    lock:true
+    url: "lvl3",
+    lock: lvl3Status ?? true 
   },
   {
     id: 4,
-    image: lvlImg1,
+    image: lvlImg4,
     heading: "Level 4",
     description: "Mastering a domain for you",
-    bgcolor: "#B56FCF ",
-    url:"lvl4",
-    lock:true
+    bgcolor: "#B56FCF",
+    url: "lvl4",
+    lock: lvl4Status ?? true 
   },
 ];
 

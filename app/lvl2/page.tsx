@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import styles from "../lvl1/level.module.css";
+import { status } from "../data"
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import LevelBox from "../../components/levelbox/LevelBox";
@@ -204,7 +205,12 @@ export default function Lvl2() {
       imageUrl: img4,
     },
   ];
-
+  const item =status.find(d => d.level === 2);
+  if (item && item.lock) {
+    return (
+      <h1 className={styles.comingSoonh1}>Coming Soon!</h1>
+    );
+  }
   return (
     <div className={styles.main}>
       <Navbar />

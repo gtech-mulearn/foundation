@@ -300,9 +300,6 @@
         overflow: hidden;
         padding: 0;
     }
-    .heroTextWrapper img{
-       /* scale: 1.1; */
-    }
     .textContainer .left h2{
         font-size: 5rem;
         line-height: 5rem;
