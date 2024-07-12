@@ -60,6 +60,10 @@
 .levelBottom button img{
     rotate: -90deg;
 }
+.lockIcon{
+    width: 50px;
+    height: 50px;
+}
 .levelCard{
     flex: 1 1 calc(50% - 20px);
 }

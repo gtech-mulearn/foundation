@@ -3,6 +3,7 @@ import styles from "./wall.module.css"
 import Image from 'next/image'
 import row1 from "../../assets/WallOfFame/learners-row1.png"
 import row2 from "../../assets/WallOfFame/learners-row2.png"
+import {Learners1,Learners2} from '@/components/Learners/Learners'
 export default function WallOfFame() {
   return (
     <section id={styles.wallOfFame}>
@@ -12,8 +13,9 @@ export default function WallOfFame() {
             </div>
             <div className={styles.wallRight}>
                 <div className={styles.wallImgContainer}>
-                    <Image src={row1} alt=''/>
-                    <Image src={row2} alt=''/>
+                    <Learners1 />
+                    <Learners2 />
+                    
                     <h2>Be a part of community learners</h2>
                 </div>
             </div>
