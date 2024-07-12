@@ -217,6 +217,8 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
 }
 .exploreCircle{
     position: relative;
@@ -254,7 +256,7 @@
     background-color: #688DE2;
     padding: 1rem 2rem;
     border-radius: 8px;
-    margin-top: 4rem;
+   
     font-weight: 600;
 }
 .regNowBtn:hover{
@@ -360,6 +362,10 @@
         right: unset;
         left: -20px;
         scale: .4;
+    }
+    .exploreMoreContainer{
+        flex-direction: column;
+        align-items: center;
     }
 
 }
