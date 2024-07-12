@@ -11,7 +11,7 @@ const Badge: React.FC<BadgeProps> = ({ task }) => {
   let imgUrl: any;
 
   switch (task) {
-    case "#TFP2.0-scratch":
+    case "#tfp2.0-scratch":
       imgUrl = scratchBadge;
       break;
     default:

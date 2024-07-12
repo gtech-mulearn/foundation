@@ -12,39 +12,33 @@ import bottomLeftParticle from "@/assets/BadgeCollection/particle-bottom-left.sv
 import bottomRightParticle from "@/assets/BadgeCollection/particle-bottom-right.svg";
 import Badge from "@/components/Badge/Badge";
 
-interface Badge {
+interface BadgeData {
   full_name: string;
-  completed_tasks: any[]; 
+  completed_tasks: string; 
 }
 
 const BadgeCollection: React.FC = () => {
-  const [data, setData] = useState<Badge | null>(null);
+
+  const [data, setData] = useState<BadgeData | null>(null);
   const [muid, setMuid] = useState<string>("");
   const api = "https://dev.mulearn.org/api/v1/dashboard/profile/badges/";
 
   const fetchData = async () => {
     try {
-      const response = await axios.get<{ response: Badge }>(api + muid);
+      const response = await axios.get<{ response: BadgeData }>(api + muid);
       setData(response.data.response); 
     } catch (error) {
       console.error("Error fetching data:", error);
     }
   };
-  const setDummyTasks = () => {
-    setData({
-      full_name: "Arjun C Vinod",
-      completed_tasks: ["#TFP2.0-scratch", "#TFP2.0-scratch", "#TFP2.0-scratch"],
-    });
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    fetchData();
   };
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setMuid(event.target.value);
-  };
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setDummyTasks()
-    // fetchData();
   };
 
   return (
@@ -72,17 +66,19 @@ const BadgeCollection: React.FC = () => {
             <button type="submit" className={styles.fetchBadgeBtn}> <SendIcon /> </button>
           </form>
           <div className={styles.badgeDisplayContainer}>
-            {data && (
-              <div>
-                <h2 className={styles.badgeHeading}>Badges of <span>{data.full_name}</span></h2>
-                <div className={styles.badgeImgContainer}>
-                  {data.completed_tasks.map((task, index) => (
-                    <Badge key={index} task={task}/>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
+  {data && (
+    <div>
+      <h2 className={styles.badgeHeading}>Badges of <span>{data.full_name}</span></h2>
+      {data.completed_tasks.length>0 ? (
+        <div className={styles.badgeImgContainer}>
+          <Badge key={data.completed_tasks} task={data.completed_tasks} />
+        </div>
+      ) : (
+        <p className={styles.noBadgeFoundTxt}>No badges have been achieved.</p>
+      )}
+    </div>
+  )}
+</div>
         </div>
         <div className={styles.BadgeParticlesContainer}>
           <Image src={topLeftParticle} alt="top-left-particle" />
