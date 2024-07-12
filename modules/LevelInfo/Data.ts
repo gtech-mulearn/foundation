@@ -22,7 +22,7 @@ export interface DataItem {
 const data: DataItem[] = [
   {
     id: 1,
-    image: lvlImg1,
+    image: lvlImg4,
     heading: "Week 0",
     description: "Analyse, visualise, choose tools",
     bgcolor: "#F36B37",
@@ -49,7 +49,7 @@ const data: DataItem[] = [
   },
   {
     id: 4,
-    image: lvlImg4,
+    image: lvlImg1,
     heading: "Level 4",
     description: "Mastering a domain for you",
     bgcolor: "#B56FCF",
