@@ -11,7 +11,7 @@ const Badge: React.FC<BadgeProps> = ({ task }) => {
   let imgUrl: any;
   let badgeName: string = "";
   switch (task) {
-    case "TFP Scratch Task":
+    case "Scratch Mastety":
       imgUrl = scratchBadge;
       badgeName = "Scratch Mastety";
       break;
