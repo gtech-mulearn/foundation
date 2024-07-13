@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import axios from "axios";
+import toast, { Toaster } from 'react-hot-toast';
 import Image from "next/image";
 import styles from "./badge.module.css";
 import searchIcon from "@/assets/BadgeCollection/search.svg";
@@ -28,7 +29,8 @@ const BadgeCollection: React.FC = () => {
       const response = await axios.get<{ response: BadgeData }>(api + muid);
       setData(response.data.response); 
     } catch (error) {
-      console.error("Error fetching data:", error);
+      toast.error("Invalid μ-id",{
+        position: "bottom-center"})
     }
   };
 
@@ -42,6 +44,7 @@ const BadgeCollection: React.FC = () => {
   };
 
   return (
+    
     <section id={styles.badgeCollection}>
       <div className={styles.wrapperBox}>
         <div className={styles.badgeContainer}>
@@ -89,6 +92,7 @@ const BadgeCollection: React.FC = () => {
           <Image src={bottomRightParticle} alt="bottom-right-particle" />
         </div>
       </div>
+      <Toaster />
     </section>
   );
 };
