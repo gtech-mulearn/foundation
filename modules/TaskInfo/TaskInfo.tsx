@@ -7,16 +7,18 @@ const TaskInfo: React.FC = () => {
   return (
     <section id={styles.taskInfo}>
       <div className={styles.taskCardContainer}>
-      {data.map((item: DataItem) => (
+        {data.map((item: DataItem) => (
           <TaskCard key={item.id} {...item} />
         ))}
       </div>
       <div className={styles.taskTextContainer}>
-        <p>Set-up your system and <span>start</span> work today</p>
+        <p>
+          Set-up your system and <span>start</span> work today
+        </p>
         <button>Start Now</button>
       </div>
     </section>
   );
-}
+};
 
 export default TaskInfo;

@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 #badgeCollection {
   padding: 0 8vw;
   padding-bottom: 5rem;
@@ -6,6 +5,7 @@
   display: flex;
   justify-content: center;
 }
+
 .wrapperBox {
   width: 100%;
   background-color: black;
@@ -16,11 +16,13 @@
   justify-content: center;
   position: relative;
 }
+
 .badgeContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .badgeContainer h1 {
   font-size: 4.3vw;
   color: white;
@@ -28,10 +30,12 @@
   font-family: "Paytone One", sans-serif;
   letter-spacing: 0.2px;
 }
+
 .badgeContainer h1 span {
   font-family: "Paytone One", sans-serif;
   position: relative;
 }
+
 .badgeContainer h1 span::after {
   content: "";
   width: 100%;
@@ -44,23 +48,26 @@
   background-size: contain;
   background-position: bottom;
 }
+
 .badgeContainer .subHeads {
   position: relative;
 }
+
 .badgeContainer .subHeads img {
   position: absolute;
   top: -2vw;
   right: -13vw;
   width: 10vw;
 }
+
 .badgeContainer .subHeads h3 {
   color: white;
-  font-family: "Inter", sans-serif;
   font-size: 1.75vw;
   text-align: center;
   letter-spacing: 1px;
   margin-top: 1.5rem;
 }
+
 .badgeContainer .subHeads h2 {
   font-size: 2vw;
   color: white;
@@ -68,6 +75,7 @@
   letter-spacing: 1px;
   margin-top: 0.2rem;
 }
+
 .inputContainer {
   width: 35vw;
   display: flex;
@@ -81,15 +89,18 @@
   outline: 4px solid transparent;
   transition: 0.3s;
 }
+
 .inputContainer:focus-within {
   border: 1px solid #2381ef;
   outline: 4px solid #c1dafb;
 }
+
 .inputContainer label {
   padding: 0 1rem;
   display: grid;
   place-items: center;
 }
+
 .inputContainer input {
   width: 100%;
   height: 3rem;
@@ -97,28 +108,97 @@
   outline: none;
   background-color: white;
 }
+
 .inputContainer input::placeholder {
   font-family: "Inter", sans-serif;
 }
+
 .BadgeParticlesContainer img {
   position: absolute;
 }
+
 .BadgeParticlesContainer img:nth-child(1) {
   top: 4vw;
   left: 7vw;
 }
+
 .BadgeParticlesContainer img:nth-child(2) {
   top: 2vw;
   right: 7vw;
 }
+
 .BadgeParticlesContainer img:nth-child(3) {
   bottom: 7vw;
   left: 4vw;
 }
+
 .BadgeParticlesContainer img:nth-child(4) {
   bottom: 7vw;
   right: 12vw;
 }
+
+.fetchBadgeBtn {
+  padding: 0 1rem;
+  color: #61c294;
+}
+
+.badgeDisplayContainer {
+  color: white;
+  padding: 1rem;
+}
+
+.badgeHeading {
+  font-size: 3vw;
+  font-family: "Paytone One", sans-serif;
+  text-align: center;
+}
+
+.badgeHeading span {
+  color: #688de2;
+  font-family: "Paytone One", sans-serif;
+  position: relative;
+}
+
+.badgeHeading span::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-image: url("/Images/badge-underline.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.badgeImgContainer {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.badgeImgContainer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badgeImgContainer img {
+  width: 100px;
+}
+
+.badgeName {
+  padding: 1rem 0;
+}
+
+.noBadgeFoundTxt {
+  padding-top: 3rem;
+  text-align: center;
+}
+
 @media only screen and (max-width: 850px) {
   #badgeCollection {
     padding: 5vw;
@@ -156,6 +236,12 @@
   .inputContainer input {
     height: 2.2rem;
   }
+  .badgeHeading {
+    font-size: 5vw;
+  }
+  .badgeImgContainer img {
+    width: 80px;
+  }
 }
 @media only screen and (max-width: 650px) {
   .wrapperBox {
@@ -188,6 +274,12 @@
   .BadgeParticlesContainer img:nth-child(4) {
     bottom: 3.5vw;
     right: 2vw;
+  }
+  .badgeImgContainer img {
+    width: 60px;
+  }
+  .badgeImgContainer h3 {
+    font-size: 0.8rem;
   }
 }
 @media only screen and (max-width: 400px) {

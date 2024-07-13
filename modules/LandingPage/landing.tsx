@@ -3,7 +3,7 @@ import styles from "./landing.module.css";
 import Image from "next/image";
 import Logo from "../../assets/Home/Logo.svg";
 import verticalDivider from "../../assets/Home/Vertical Divider.png";
-import FtpLogo from "../../assets/Home/foundation logo.svg";
+import FtpLogo from "../../assets/Home/foundation logo.png";
 import HeroText from "../../assets/Home/Hero Text.svg";
 import tlp from "../../assets/Home/topleftparticle.svg";
 import trp from "../../assets/Home/toprightparticle.svg";
@@ -19,11 +19,11 @@ export default function landing() {
       <div className={styles.bg}></div>
       <section id={styles.hero}>
         <nav className={styles.navBar}>
-          <div className={styles.logo}>
+          <a href="https://mulearn.org/" target="blank" className={styles.logo}>
             <Image src={Logo} alt="logo" />
             <Image src={verticalDivider} alt="VD" />
             <h3>The Foundation Program</h3>
-          </div>
+          </a>
         </nav>
         <div className={styles.heroTextContainer}>
           <div className={styles.heroLogotWrapper}>
@@ -34,27 +34,55 @@ export default function landing() {
           </div>
         </div>
         <div className={styles.textContainer}>
-          <div className={styles.left}>
+          {/* <div className={styles.left}>
             <div className={styles.textWrapper}>
               <h2>Code </h2>
               <h2>Create</h2>
               <h2>Conquer</h2>
             </div>
-          </div>
-          <div className={styles.right}>
+          </div> */}
+          {/* <div className={styles.right}>
             <div className={styles.textWrapper}>
               <h3>
                 Your<span> 30 </span>day skill revolution <br />
                 starts here!
               </h3>
             </div>
-          </div>
+          </div> */}
+          <h3>
+            Your gateway to getting started with <br className={styles.br} />{" "}
+            programming and technology from ground-up
+          </h3>
         </div>
         <div className={styles.scrollBtnContainer}>
           <a href="#levelInfo">
             <button>
               <Image src={Arrow} alt="arrow" /> scroll
             </button>
+          </a>
+        </div>
+
+        <div className={styles.butttonsContainer}>
+          <a
+            href="https://mulearnfoundation.notion.site/The-Foundation-Program-b7aad5aba0f74183b721c22aa30d0dea?pvs=4"
+            className={styles.mainBtn}
+            style={{ backgroundColor: "#F36B37" }}
+          >
+            Checkout Notion
+          </a>
+          <a
+            href="https://mulearn.org/r/tfpregistration"
+            className={styles.mainBtn}
+            style={{ backgroundColor: "#61C294" }}
+          >
+            Register
+          </a>
+          <a
+            href="https://discord.mulearn.org"
+            className={styles.mainBtn}
+            style={{ backgroundColor: " #688DE2" }}
+          >
+            Join Discord
           </a>
         </div>
 
@@ -66,12 +94,6 @@ export default function landing() {
           <Image src={brp} alt="particle" />
         </div>
       </section>
-      <div className={styles.exploreMoreContainer}>
-        <div className={styles.exploreCircle}>
-          <Image src={explore} alt="explor" className={styles.exploreRotate} />
-          <Image src={playbtn} alt="play" className={styles.explorePlay} />
-        </div>
-      </div>
     </>
   );
 }

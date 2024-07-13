@@ -1,14 +1,22 @@
+.footContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .footerContainer {
   width: 80%;
   align-self: center;
   display: flex;
   flex-direction: column;
-  background-color: black;
-  box-shadow: 0 -0.5rem 8rem rgba(255, 255, 255, 0.15);
-  margin-top: 40vh;
+  background-color:black;
+  box-shadow: 0 -0.5rem 8rem rgba(0, 0, 0, 0.15);
+  margin-top: 3rem;
   padding: 5rem;
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
+  margin: 0 auto;
+  margin-top: 3rem;
 }
 
 .mainContainer {
@@ -17,6 +25,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .copyright {
   width: 100%;
   text-align: center;

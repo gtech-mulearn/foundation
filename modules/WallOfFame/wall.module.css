@@ -4,7 +4,10 @@
     justify-content: center;
     padding: 5rem 8vw;
     margin-top: 8rem;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
+
 .wallOfFameContainer{
     width: 100%;
     background-color: black;
@@ -13,6 +16,7 @@
     flex-wrap: wrap;
     padding: 5vw 0;
 }
+
 .wallLeft{
     width: 48%;
     height: 100%;
@@ -20,16 +24,19 @@
     align-items: center;
     justify-content: center;
 }
+
 .wallLeft h1{
     font-family: "paytone one",sans-serif;
     font-size: 4.5vw;
     color: white;
     position: relative;
 }
+
 .wallLeft h1 span{
     font-family: "paytone one",sans-serif;
     position: relative;
 }
+
 .wallLeft h1 span::after{
     position: absolute;
     content: '';
@@ -41,6 +48,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .wallLeft h1::before{
     content: '';
     position: absolute;
@@ -52,6 +60,7 @@
     background-position: center;
     background-size: contain;
 }
+
 .wallRight{
     width: 50%;
     min-width: 360px;
@@ -60,6 +69,7 @@
     height: 100%;
     padding-right: 4rem;
 }
+
 .wallImgContainer{
     max-width:570px;
     width: 40vw;
@@ -79,12 +89,15 @@
     padding: 0 2rem 0 3rem;
     position: relative;
 }
+
 .wallImgContainer img{
     transition: .2s;
 }
+
 .wallImgContainer img:hover{
     scale: .98;
 }
+
 .wallImgContainer h2{
     font-size: 1.625vw;
     color: #F4F4F4;
@@ -96,6 +109,7 @@
     letter-spacing: 1px;
     font-weight: 500;
 }
+
 @media only screen and (max-width: 830px) {
     #wallOfFame{
         padding: 2rem 5vw;
