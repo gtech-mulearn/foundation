@@ -21,7 +21,7 @@ const BadgeCollection: React.FC = () => {
 
   const [data, setData] = useState<BadgeData | null>(null);
   const [muid, setMuid] = useState<string>("");
-  const api = "https://dev.mulearn.org/api/v1/dashboard/profile/badges/";
+  const api = "https://mulearn.org/api/v1/dashboard/profile/badges/";
 
   const fetchData = async () => {
     try {
