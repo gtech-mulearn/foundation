@@ -25,7 +25,7 @@ const LevelCard: React.FC<LevelCardProps> = ({
  lock,
 }) => {
   return (
-  <Link href={lock?"":`/${url}`}>
+  <Link href={lock?"":url}>
     <div className={styles.levelCard} style={{ backgroundColor: bgcolor }}>
       <div className={styles.levelTop}>
         <div className={styles.levelLeft}>

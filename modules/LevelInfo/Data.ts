@@ -24,38 +24,38 @@ const data: DataItem[] = [
     id: 1,
     image: lvlImg4,
     heading: "Week 0",
-    description: "Analyse, visualise, choose tools",
+    description: "Let’s craft your story! - with Scratch",
     bgcolor: "#F36B37",
-    url: "lvl1",
+    url: "https://mulearn.notion.site/Assignment-1-Scratch-bca017eba24844528810bb1e74e1abc7",
     lock: lvl1Status ?? true 
   },
-  {
-    id: 2,
-    image: lvlImg2,
-    heading: "Level 2",
-    description: "Understanding how the web works",
-    bgcolor: "#688DE2",
-    url: "lvl2",
-    lock: lvl2Status ?? true 
-  },
-  {
-    id: 3,
-    image: lvlImg3,
-    heading: "Level 3",
-    description: "Polish your profile and ace interviews",
-    bgcolor: "#FDD549",
-    url: "lvl3",
-    lock: lvl3Status ?? true 
-  },
-  {
-    id: 4,
-    image: lvlImg1,
-    heading: "Level 4",
-    description: "Mastering a domain for you",
-    bgcolor: "#B56FCF",
-    url: "lvl4",
-    lock: lvl4Status ?? true 
-  },
+  // {
+  //   id: 2,
+  //   image: lvlImg2,
+  //   heading: "Level 2",
+  //   description: "Understanding how the web works",
+  //   bgcolor: "#688DE2",
+  //   url: "lvl2",
+  //   lock: lvl2Status ?? true 
+  // },
+  // {
+  //   id: 3,
+  //   image: lvlImg3,
+  //   heading: "Level 3",
+  //   description: "Polish your profile and ace interviews",
+  //   bgcolor: "#FDD549",
+  //   url: "lvl3",
+  //   lock: lvl3Status ?? true 
+  // },
+  // {
+  //   id: 4,
+  //   image: lvlImg1,
+  //   heading: "Level 4",
+  //   description: "Mastering a domain for you",
+  //   bgcolor: "#B56FCF",
+  //   url: "lvl4",
+  //   lock: lvl4Status ?? true 
+  // },
 ];
 
 export default data;
