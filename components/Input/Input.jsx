@@ -45,7 +45,7 @@ const Input = () => {
               </button>
             </a>
             
-            <a target="_blank" rel="noopener noreferrer"  href="https://mulearn.notion.site/The-Foundation-Program-f8ba5f4b2f174aeb8ff60155d52d7b44">
+            <a target="_blank" rel="noopener noreferrer"  href="https://mulearnfoundation.notion.site/The-Foundation-Program-b7aad5aba0f74183b721c22aa30d0dea?pvs=4">
               <button className={styles.notion}>Checkout Notion Page</button>
             </a>
           </div>
@@ -58,7 +58,7 @@ const Input = () => {
         </p>
 
         <p className={styles.abouttfp}>
-          The Foundation Program is a 30-Day Hybrid Bootcamp aimed at addressing
+          The Foundation Program is an online bootcamp aimed at addressing
           the skill gap by helping students up-skill with a foundation program
           in programming and web development. The program aims to help 
           students build a foundational skill level to find opportunities in the
@@ -82,7 +82,7 @@ const Input = () => {
         <div className={styles.y_right}>
           <iframe
             className={styles.y_frame}
-            src="https://www.youtube.com/embed/xaw9jf01M9g"
+            src="https://www.youtube.com/embed/IOBOzyxsMUk?si=K5kM7iCYeU6k5gTR"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
