@@ -2,7 +2,7 @@ import lvlImg1 from "../../assets/LevelInfo/lvl1-img.svg";
 import lvlImg2 from "../../assets/LevelInfo/lvl2-img.svg";
 import lvlImg3 from "../../assets/LevelInfo/lvl3-img.svg";
 import lvlImg4 from "../../assets/LevelInfo/lvl4-img.svg";
-import { status } from "../../app/data"; // Make sure this path is correct
+import { status } from "../../app/data";
 
 const lvl1Status = status.find(d => d.level === 1)?.lock;
 const lvl2Status = status.find(d => d.level === 2)?.lock;

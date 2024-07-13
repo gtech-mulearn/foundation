@@ -1,90 +1,87 @@
-#hero{
-    background-color: transparent;
-    min-height: 98vh;
-    height: 100%;
-    position: relative;
-    /* overflow-x: hidden; */
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    box-shadow: 0px 0px 100px rgba(246, 241, 241, 0.1);
-    /* background-color: red; */
-}
-.bg{
-    position: absolute;
-    height: 100vh;
-    width: 98vw;
-    background-image: url("/Images/bg-shape.svg");
-    z-index: 0;
-    /* overflow-x: hidden; */
-    background-size: 130%;
-    background-repeat: no-repeat;
-    background-position: -120px -700px;
-    filter: blur(100px);
-    
-}
-.navBar{
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-}
-.logo{
-    color: white;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-
-}
-.logo h3{
-    width: 100px;
-    line-height: 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight:500;
-    font-size: 16px;
+#hero {
+  background-color: transparent;
+  min-height: 98vh;
+  height: 100%;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 0px 100px rgba(246, 241, 241, 0.1);
 }
 
-.heroTextContainer{
-    display: flex;
-    max-width: fit-content;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: start;
-
-    flex-direction: row;
-
-    padding-left: 2rem;
-    margin-top: 10rem;
-    /* background-color: red;    */
-
-    
-}
-.heroLogotWrapper{
-    width: 25%;
-
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 2rem;
+.bg {
+  position: absolute;
+  height: 100vh;
+  width: 98vw;
+  background-image: url("/Images/bg-shape.svg");
+  z-index: 0;
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-position: -120px -700px;
+  filter: blur(100px);
 }
 
-.heroTextWrapper{
-    display: flex;
-    justify-content: start;
-    padding-right: 100px;
-    align-items: center;
-    width: 80%;
+.navBar {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
 }
-.heroTextContainer .heroLogotWrapper{
-    margin-top: 1rem;
-    margin-left: 20px;
+
+.logo {
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
-.heroTextContainer .heroTextWrapper img{
-    object-fit: contain;
+
+.logo h3 {
+  width: 100px;
+  line-height: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.heroTextContainer {
+  display: flex;
+  max-width: fit-content;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: start;
+  flex-direction: row;
+  padding-left: 2rem;
+  margin-top: 10rem;
+}
+
+.heroLogotWrapper {
+  width: 25%;
+
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+.heroTextWrapper {
+  display: flex;
+  justify-content: start;
+  padding-right: 100px;
+  align-items: center;
+  width: 80%;
+}
+
+.heroTextContainer .heroLogotWrapper {
+  margin-top: 1rem;
+  margin-left: 20px;
+}
+
+.heroTextContainer .heroTextWrapper img {
+  object-fit: contain;
 }
 /* 
 .textContainer{
@@ -153,324 +150,288 @@
     background-image: url("../../assets/Home/underline.svg");
     background-repeat: no-repeat;
 } */
- .textContainer{
-    /* background-color: red; */
-    padding: 4rem;
- }
- .textContainer h3{
-    font-size: 2.5rem;
-    color: white;
-    text-align: center;
-    line-height: 3rem;
-    letter-spacing: 0px;
-    font-weight: 500;
- }
-.scrollBtnContainer{
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 10vw;
-}
-.scrollBtnContainer button{
-    display: flex;
-    gap: 6px;
-    align-items: center;
-    padding: 8px 10px;
-    background-color: #61C294;
-    border-radius: 30px;
-    rotate: -90deg;
-    cursor: pointer;
-}
-.scrollBtnContainer button img{
-    rotate: 90deg;
-    width: 12px;
-}
-#hero .particles img{
-    position: absolute;
-    z-index: -1;
-}
-#hero .particles img:nth-child(1){
-    top: 50px;
-    left: 100px;
-}
-#hero .particles img:nth-child(2){
-    top: 80px;
-    right: 10px;
-}
-#hero .particles img:nth-child(3){
-    top: 55%;
-    left: 5vw;
-}
-#hero .particles img:nth-child(4){
-    top: 55%;
-    right: 80px;
-}
-#hero .particles img:nth-child(5){
-    top: 10px;
-    right: 20vw;
-    width: 6rem;
-} 
-/*.exploreMoreContainer{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-top: 4rem;
-}
-.exploreCircle{
-    position: relative;
-    width: 150px;
-    height: 150px;
-    background-color: transparent;
-    border-radius: 50%;
-    border: 40px solid black;
-    box-sizing: content-box;
-    position: absolute;
-    top: 84vh;
-    border-color: rgba(255, 255, 255, 0);
-    rotate: 45deg;
+.textContainer {
+  padding: 4rem;
 }
 
-.explorePlay{
-    position: absolute;
-    top: 34%;
-    right: 33%;
-    scale: .8;
-    rotate: -45deg;
-    background-color: black;
-    box-shadow: 0px 0px 20px 20px black;
+.textContainer h3 {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  line-height: 3rem;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
 
+.scrollBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10vw;
 }
-.exploreRotate{
-    animation: rotate infinite linear 5s;
-} */
-.butttonsContainer{
-    width: 100vw;
-    display: flex;
-    /* background-color: red; */
-    justify-content: center;
-    gap: 5rem;
-    padding: 1rem 2rem;
-    padding-top: 3rem;
+
+.scrollBtnContainer button {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding: 8px 10px;
+  background-color: #61c294;
+  border-radius: 30px;
+  rotate: -90deg;
+  cursor: pointer;
 }
-.mainBtn{
-    color: rgb(31, 29, 29);
-    background-color: #688DE2;
-    width: 21rem;
-    height: 6rem;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 1.6rem;
-    display: grid;
-    place-items: center;
-    border-radius: 75px;
-    font-weight: 700;
-    letter-spacing: 0px;
-    }
-.mainBtn:hover{
-    opacity: .8;
+
+.scrollBtnContainer button img {
+  rotate: 90deg;
+  width: 12px;
 }
-@keyframes rotate{
-    from{
-        rotate: 0deg;
-    }
-    to{
-        rotate: 360deg;
-    }
+
+#hero .particles img {
+  position: absolute;
+  z-index: -1;
 }
+
+#hero .particles img:nth-child(1) {
+  top: 50px;
+  left: 100px;
+}
+
+#hero .particles img:nth-child(2) {
+  top: 80px;
+  right: 10px;
+}
+
+#hero .particles img:nth-child(3) {
+  top: 55%;
+  left: 5vw;
+}
+
+#hero .particles img:nth-child(4) {
+  top: 55%;
+  right: 80px;
+}
+
+#hero .particles img:nth-child(5) {
+  top: 10px;
+  right: 20vw;
+  width: 6rem;
+}
+
+.butttonsContainer {
+  width: 100vw;
+  display: flex;
+  /* background-color: red; */
+  justify-content: center;
+  gap: 5rem;
+  padding: 1rem 2rem;
+  padding-top: 3rem;
+}
+
+.mainBtn {
+  color: rgb(31, 29, 29);
+  background-color: #688de2;
+  width: 21rem;
+  height: 6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  border-radius: 75px;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+.mainBtn:hover {
+  opacity: 0.8;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
-    #hero .particles img:nth-child(3){
-        top: 68%;
-        left: 5vw;
-        width: 5rem;
-    }
-    #hero .particles img:nth-child(4){
-       right: 30px;
-       top: 50%;
-    }
-    .mainBtn{
-        height: 7vw;
-        font-size: 2vw;
-    }
-
+  #hero .particles img:nth-child(3) {
+    top: 68%;
+    left: 5vw;
+    width: 5rem;
+  }
+  #hero .particles img:nth-child(4) {
+    right: 30px;
+    top: 50%;
+  }
+  .mainBtn {
+    height: 7vw;
+    font-size: 2vw;
+  }
 }
-@media only screen and (max-width: 850px) {
-    .bg{
-        /* background-size: 200%; */
-        background-position: 100px 100px;
-    }
-    #hero{
-        justify-content: center;
-        /* height:100vh; */
 
-    }
- 
-    .heroTextContainer{
-        flex-wrap: wrap;
-        padding: 0;
-        margin-top: 3rem;
-    }
-    .heroLogotWrapper{
-        padding-top: 6rem;
-    }
-    .heroTextWrapper{
-        width: 95%;
-        justify-content: center;
-        overflow: hidden;
-        padding: 0;
-    }
-    /* .textContainer .left h2{
-        font-size: 5rem;
-        line-height: 5rem;
-    } */
-    .textContainer{
-        padding-bottom:2rem
-     }
-    .textContainer h3{
-        font-size: 2rem;
-        line-height: 2.5rem;
-    }
-    #hero .particles img:nth-child(1){
-        top: 50px;
-        left: 10px;
-    }
-    #hero .particles img:nth-child(2){
-        top: 80px;
-        right: 120px;
-    }
-    #hero .particles img:nth-child(3){
-      top: 55%;
-    }
-    #hero .particles img:nth-child(4){
-        top: 65%;
-        right: 80px;
-    }
-    #hero .particles img:nth-child(5){
-       top: 10rem;
-       right: unset;
-       left: 15vw;
-       width: 4rem;
-    }
-    /* .exploreCircle{
-        top: 90vh;
-    } */
-    .br{
-        display: none;
-    }
-    .butttonsContainer{
-        gap: 3rem;
-    }
+@media only screen and (max-width: 850px) {
+  .bg {
+    background-position: 100px 100px;
+  }
+  #hero {
+    justify-content: center;
   }
 
-  @media only screen and (max-width: 720px) {
-    .bg{
-        background-position: 100px 100px;
-    }
-    #hero{
-        /* background-color: red; */
-        padding-top: 5rem;
-    }
-    .heroTextContainer{
-        margin-top: unset;
-    }
-    .textContainer .left{
-        width: 100%;
-        justify-content: flex-start;
-        margin-top: 2rem;
-    }
-    .textContainer .left h2{
-        font-size: 4rem;
-    }
-    .textContainer .right{
-        width: 100%;
-        justify-content:center;
-    }
-    .scrollBtnContainer{
-        display: none;
-    }
-    #hero .particles img:nth-child(3){
-        top:unset;
-        left: 2vw;
-        bottom: 30%;
-        scale: .9;
-      }
-      #hero .particles img:nth-child(4){
-        top: 60%;
-        right: 20px;
-    }
-    /* .exploreMoreContainer{
-        flex-direction: column;
-        align-items: center;
-    } */
-    .butttonsContainer{
-        gap: 2rem;
-    }
+  .heroTextContainer {
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 3rem;
+  }
+  .heroLogotWrapper {
+    padding-top: 6rem;
+  }
+  .heroTextWrapper {
+    width: 95%;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+  }
+  .textContainer {
+    padding-bottom: 2rem;
+  }
+  .textContainer h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  #hero .particles img:nth-child(1) {
+    top: 50px;
+    left: 10px;
+  }
+  #hero .particles img:nth-child(2) {
+    top: 80px;
+    right: 120px;
+  }
+  #hero .particles img:nth-child(3) {
+    top: 55%;
+  }
+  #hero .particles img:nth-child(4) {
+    top: 65%;
+    right: 80px;
+  }
+  #hero .particles img:nth-child(5) {
+    top: 10rem;
+    right: unset;
+    left: 15vw;
+    width: 4rem;
+  }
+  .br {
+    display: none;
+  }
+  .butttonsContainer {
+    gap: 3rem;
+  }
+}
 
+@media only screen and (max-width: 720px) {
+  .bg {
+    background-position: 100px 100px;
+  }
+  #hero {
+    padding-top: 5rem;
+  }
+  .heroTextContainer {
+    margin-top: unset;
+  }
+  .textContainer .left {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+  .textContainer .left h2 {
+    font-size: 4rem;
+  }
+  .textContainer .right {
+    width: 100%;
+    justify-content: center;
+  }
+  .scrollBtnContainer {
+    display: none;
+  }
+  #hero .particles img:nth-child(3) {
+    top: unset;
+    left: 2vw;
+    bottom: 30%;
+    scale: 0.9;
+  }
+  #hero .particles img:nth-child(4) {
+    top: 60%;
+    right: 20px;
+  }
+  .butttonsContainer {
+    gap: 2rem;
+  }
 }
 @media only screen and (max-width: 520px) {
-    .bg{
-        background-size: 300%;
-        background-position:0;
-        filter: blur(50px);
-    }
-    .navBar .logo{
-        scale: .6;
-    }
-    .textContainer .left h2{
-        font-size: 3.5rem;
-        line-height: 4rem;
-    }
-    .textContainer .right .textWrapper h3{
-        font-size: 1.5rem;
-        line-height: 2.5rem;
-    }
-    .textContainer .right .textWrapper h3 span::after{
-        width: 100px;
-        top: 25px;
-        left: -5px;
-    }
-    #hero .particles img:nth-child(1){
-        top: 5px;
-        left: 10px;
-        scale: .8;
-    }
-    #hero .particles img:nth-child(2){
-        top: 80px;
-        right: 10px;
-        scale: .8;
-    }
-    #hero .particles img:nth-child(3){
-        top: unset;
-        bottom: 25%;
-        left: 10px;
-        right: unset;
-        scale: .6;
-    }
-    #hero .particles img:nth-child(4){
-        top: 65%;
-        right: 10%;
-        scale: .8;
-    }
-    #hero .particles img:nth-child(5){
-        top: 15%;
-        right: unset;
-        left: 30px;
-        scale: 1;
-    }
-    .textContainer{
-        padding: 3rem;
-        padding-bottom: 2rem;
-    }
-    .textContainer h3{
-        font-size: 1.5rem;
-        line-height: 2.3rem;
-    }
-    .butttonsContainer{
-       flex-direction:column;
-       gap: 20px;
-    }
-    .mainBtn{
-        width: 100%;
-        font-size: 1.4rem;
-        height: 3rem;
-    }
+  .bg {
+    background-size: 300%;
+    background-position: 0;
+    filter: blur(50px);
+  }
+  .navBar .logo {
+    scale: 0.6;
+  }
+  .textContainer .left h2 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .textContainer .right .textWrapper h3 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .textContainer .right .textWrapper h3 span::after {
+    width: 100px;
+    top: 25px;
+    left: -5px;
+  }
+  #hero .particles img:nth-child(1) {
+    top: 5px;
+    left: 10px;
+    scale: 0.8;
+  }
+  #hero .particles img:nth-child(2) {
+    top: 80px;
+    right: 10px;
+    scale: 0.8;
+  }
+  #hero .particles img:nth-child(3) {
+    top: unset;
+    bottom: 25%;
+    left: 10px;
+    right: unset;
+    scale: 0.6;
+  }
+  #hero .particles img:nth-child(4) {
+    top: 65%;
+    right: 10%;
+    scale: 0.8;
+  }
+  #hero .particles img:nth-child(5) {
+    top: 15%;
+    right: unset;
+    left: 30px;
+    scale: 1;
+  }
+  .textContainer {
+    padding: 3rem;
+    padding-bottom: 2rem;
+  }
+  .textContainer h3 {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+  .butttonsContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .mainBtn {
+    width: 100%;
+    font-size: 1.4rem;
+    height: 3rem;
+  }
 }

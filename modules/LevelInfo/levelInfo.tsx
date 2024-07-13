@@ -6,7 +6,6 @@ import data from "./Data";
 import { DataItem } from "./Data";
 import Image from "next/image";
 import online from "../../assets/LevelInfo/Online.svg";
-import tabletScreen from "../../assets/LevelInfo/ai tablet screen.svg";
 const LevelInfo: React.FC = () => {
   return (
     <>
@@ -29,7 +28,6 @@ const LevelInfo: React.FC = () => {
             Skill gap hinders employment despite job availability. Address this
             crucial issue now.
           </p>
-          <Image src={tabletScreen} alt="" />
         </div>
       </section>
       <div className={styles.horizontalTextContainer}>

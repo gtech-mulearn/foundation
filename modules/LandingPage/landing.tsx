@@ -49,11 +49,10 @@ export default function landing() {
               </h3>
             </div>
           </div> */}
-         <h3>
-         Your gateway to getting started with <br className={styles.br}/> programming and technology from ground-up
-         </h3>
-
-  
+          <h3>
+            Your gateway to getting started with <br className={styles.br} />{" "}
+            programming and technology from ground-up
+          </h3>
         </div>
         <div className={styles.scrollBtnContainer}>
           <a href="#levelInfo">
@@ -64,29 +63,27 @@ export default function landing() {
         </div>
 
         <div className={styles.butttonsContainer}>
-        
-
-        <a
-          href="https://mulearnfoundation.notion.site/The-Foundation-Program-b7aad5aba0f74183b721c22aa30d0dea?pvs=4"
-          className={styles.mainBtn}
-          style={{ backgroundColor: "#F36B37" }}
-        >
-          Checkout Notion
-        </a>
-        <a
-          href="https://mulearn.org/r/tfpregistration"
-          className={styles.mainBtn}
-          style={{ backgroundColor: "#61C294" }}
-        >
-          Register
-        </a>
-        <a
-          href="https://discord.mulearn.org"
-          className={styles.mainBtn}
-          style={{ backgroundColor: " #688DE2" }}
-        >
-          Join Discord
-        </a>
+          <a
+            href="https://mulearnfoundation.notion.site/The-Foundation-Program-b7aad5aba0f74183b721c22aa30d0dea?pvs=4"
+            className={styles.mainBtn}
+            style={{ backgroundColor: "#F36B37" }}
+          >
+            Checkout Notion
+          </a>
+          <a
+            href="https://mulearn.org/r/tfpregistration"
+            className={styles.mainBtn}
+            style={{ backgroundColor: "#61C294" }}
+          >
+            Register
+          </a>
+          <a
+            href="https://discord.mulearn.org"
+            className={styles.mainBtn}
+            style={{ backgroundColor: " #688DE2" }}
+          >
+            Join Discord
+          </a>
         </div>
 
         <div className={styles.particles}>
@@ -97,34 +94,6 @@ export default function landing() {
           <Image src={brp} alt="particle" />
         </div>
       </section>
-      {/* <div className={styles.exploreMoreContainer}>
-        <div className={styles.exploreCircle}>
-          <Image src={explore} alt="explor" className={styles.exploreRotate} />
-          <Image src={playbtn} alt="play" className={styles.explorePlay} />
-        </div>
-        <a
-          href="https://mulearn.org/r/tfpregistration"
-          className={styles.regNowBtn}
-          style={{ backgroundColor: "#F36B37" }}
-        >
-          Register Now
-        </a>
-
-        <a
-          href="https://mulearn.notion.site/The-Foundation-Program-f8ba5f4b2f174aeb8ff60155d52d7b44"
-          className={styles.regNowBtn}
-          style={{ backgroundColor: "#61C294" }}
-        >
-          Checkout Notion Page
-        </a>
-        <a
-          href="https://discord.mulearn.org"
-          className={styles.regNowBtn}
-          style={{ backgroundColor: " #688DE2" }}
-        >
-          Join Discord
-        </a>
-      </div> */}
     </>
   );
 }

@@ -2,9 +2,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  /* background-color: #1d1ddf; */
- 
 }
+
 .footerContainer {
   width: 80%;
   align-self: center;
@@ -26,6 +25,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .copyright {
   width: 100%;
   text-align: center;
