@@ -67,7 +67,7 @@ export default function landing() {
         
 
         <a
-          href="https://mulearn.notion.site/The-Foundation-Program-f8ba5f4b2f174aeb8ff60155d52d7b44"
+          href="https://mulearnfoundation.notion.site/The-Foundation-Program-b7aad5aba0f74183b721c22aa30d0dea?pvs=4"
           className={styles.mainBtn}
           style={{ backgroundColor: "#F36B37" }}
         >

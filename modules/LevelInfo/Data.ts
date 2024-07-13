@@ -26,7 +26,7 @@ const data: DataItem[] = [
     heading: "Week 0",
     description: "Let’s craft your story! - with Scratch",
     bgcolor: "#F36B37",
-    url: "https://mulearn.notion.site/Assignment-1-Scratch-bca017eba24844528810bb1e74e1abc7",
+    url: "https://mulearnfoundation.notion.site/Assignment-1-Scratch-44f0e3401a7e43cf8c783e3cfe8d8b57",
     lock: lvl1Status ?? true 
   },
   // {
