@@ -8,7 +8,13 @@
     max-width: 1280px;
     padding-bottom: 10vh;
   }
-  
+  .loader{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    place-items: center;
+  }
   .m_header {
     margin: auto;
     display: block;

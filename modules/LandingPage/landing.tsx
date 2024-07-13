@@ -34,21 +34,26 @@ export default function landing() {
           </div>
         </div>
         <div className={styles.textContainer}>
-          <div className={styles.left}>
+          {/* <div className={styles.left}>
             <div className={styles.textWrapper}>
               <h2>Code </h2>
               <h2>Create</h2>
               <h2>Conquer</h2>
             </div>
-          </div>
-          <div className={styles.right}>
+          </div> */}
+          {/* <div className={styles.right}>
             <div className={styles.textWrapper}>
               <h3>
                 Your<span> 30 </span>day skill revolution <br />
                 starts here!
               </h3>
             </div>
-          </div>
+          </div> */}
+         <h3>
+         Your gateway to getting started with <br className={styles.br}/> programming and technology from ground-up
+         </h3>
+
+  
         </div>
         <div className={styles.scrollBtnContainer}>
           <a href="#levelInfo">
@@ -56,6 +61,32 @@ export default function landing() {
               <Image src={Arrow} alt="arrow" /> scroll
             </button>
           </a>
+        </div>
+
+        <div className={styles.butttonsContainer}>
+        
+
+        <a
+          href="https://mulearn.notion.site/The-Foundation-Program-f8ba5f4b2f174aeb8ff60155d52d7b44"
+          className={styles.mainBtn}
+          style={{ backgroundColor: "#F36B37" }}
+        >
+          Checkout Notion
+        </a>
+        <a
+          href="https://mulearn.org/r/tfpregistration"
+          className={styles.mainBtn}
+          style={{ backgroundColor: "#61C294" }}
+        >
+          Register
+        </a>
+        <a
+          href="https://discord.mulearn.org"
+          className={styles.mainBtn}
+          style={{ backgroundColor: " #688DE2" }}
+        >
+          Join Discord
+        </a>
         </div>
 
         <div className={styles.particles}>
@@ -66,11 +97,11 @@ export default function landing() {
           <Image src={brp} alt="particle" />
         </div>
       </section>
-      <div className={styles.exploreMoreContainer}>
-        {/* <div className={styles.exploreCircle}>
+      {/* <div className={styles.exploreMoreContainer}>
+        <div className={styles.exploreCircle}>
           <Image src={explore} alt="explor" className={styles.exploreRotate} />
           <Image src={playbtn} alt="play" className={styles.explorePlay} />
-        </div> */}
+        </div>
         <a
           href="https://mulearn.org/r/tfpregistration"
           className={styles.regNowBtn}
@@ -93,7 +124,7 @@ export default function landing() {
         >
           Join Discord
         </a>
-      </div>
+      </div> */}
     </>
   );
 }

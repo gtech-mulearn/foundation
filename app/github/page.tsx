@@ -16,7 +16,9 @@ const github = () => {
       </Head>
       <main className={styles.main}>
         <Github />
+       {/* <div className={styles.githubFooterContainer}> */}
         <Footer bgColor="transparent"/>
+        {/* </div> */}
       </main>
     </>
   );

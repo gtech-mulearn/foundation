@@ -69,18 +69,20 @@
   scale: 0.8;
 }
 .horizontalTextContainer{
-  padding: 2rem;
+  padding: 1rem;
   width: 100vw;
-  background-color: #161618;
-  margin-top: 3rem;
+  background-color: rgb(18, 18, 18);
+  margin-top: 5rem;
+  display: flex;
+  gap: 2rem;
 }
 .horizontalTextContainer h1{
   font-size: 4vw ;
   text-align: center;
   font-family: "Paytone One", sans-serif;
   letter-spacing: 1px;
-  color: #F8F8F8;
 }
+
 @media only screen and (max-width: 1250px) {
   .levelCardContainer {
     padding: 0 1rem;
@@ -121,6 +123,9 @@
     }
     .horizontalTextContainer{
       margin-top: 4rem;
+    }
+    .horizontalTextContainer h1{
+        font-size: 2rem
     }
   }
 }

@@ -1,14 +1,16 @@
 #hero{
     background-color: transparent;
-    height: 98vh;
+    min-height: 98vh;
+    height: 100%;
     position: relative;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     justify-content: center;
     display: flex;
     flex-direction: column;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     box-shadow: 0px 0px 100px rgba(246, 241, 241, 0.1);
+    /* background-color: red; */
 }
 .bg{
     position: absolute;
@@ -16,7 +18,7 @@
     width: 98vw;
     background-image: url("/Images/bg-shape.svg");
     z-index: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background-size: 130%;
     background-repeat: no-repeat;
     background-position: -120px -700px;
@@ -49,25 +51,22 @@
 
 .heroTextContainer{
     display: flex;
-    max-width: 98vw;
+    max-width: fit-content;
     justify-content: center;
-    /* gap: 2rem; */
+    margin: 0 auto;
     align-items: start;
-    /* background-color: red; */
-    /* padding-left: 8vw; */
-    /* flex-wrap: wrap; */
+
     flex-direction: row;
-    /* padding: 0 5vw;   */
-    /* overflow: hidden; */
-    /* background-color: rgb(113, 3, 3); */
+
     padding-left: 2rem;
-    margin-top: 5rem;
+    margin-top: 10rem;
+    /* background-color: red;    */
 
     
 }
 .heroLogotWrapper{
     width: 25%;
-    /* background-color: green; */
+
     display: flex;
     justify-content: flex-end;
     padding-right: 2rem;
@@ -76,15 +75,9 @@
 .heroTextWrapper{
     display: flex;
     justify-content: start;
-    /* background-color: #F36B37; */
     padding-right: 100px;
-    /* flex-direction: column; */
     align-items: center;
     width: 80%;
-    /* background-color: #F36B37; */
-    /* padding-left: 10vw; */
-    /* overflow: hidden; */
-
 }
 .heroTextContainer .heroLogotWrapper{
     margin-top: 1rem;
@@ -92,27 +85,20 @@
 }
 .heroTextContainer .heroTextWrapper img{
     object-fit: contain;
-    /* height: 300px; */
-    
-    /* min-width: 450px; */
 }
-
+/* 
 .textContainer{
-    /* width: 100vw; */
     display: flex;
     flex-wrap: wrap;
 }
 .textContainer .left{
     width: 50%;
-    /* background-color: red; */
-    /* height: 5vh; */
     display: flex;
     justify-content: center;
     padding-left: 5vw;
     min-width: 360px;
 }
 .textContainer .left .textWrapper{
-    /* background-color: gray; */
     width: 400px;
 
 }
@@ -133,14 +119,13 @@
 }
 .textContainer .right{
     width: 50%;
-    /* background-color: green; */
     display: flex;
     justify-content:start;
     align-items: center;
     padding: 1rem;
 }
 .textContainer .right .textWrapper{
-    /* background-color: #F36B37; */
+
     padding: 1rem;
     padding-top: 3rem;
 }
@@ -162,13 +147,24 @@
     content: '';
     width: 200px;
     height: 10px;
-    /* background-color: red; */
     position: absolute;
     top: 42px;
     left: -10px;
     background-image: url("../../assets/Home/underline.svg");
     background-repeat: no-repeat;
-}
+} */
+ .textContainer{
+    /* background-color: red; */
+    padding: 4rem;
+ }
+ .textContainer h3{
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+    letter-spacing: 0px;
+    font-weight: 500;
+ }
 .scrollBtnContainer{
     display: flex;
     justify-content: flex-end;
@@ -198,7 +194,7 @@
 }
 #hero .particles img:nth-child(2){
     top: 80px;
-    right: 120px;
+    right: 10px;
 }
 #hero .particles img:nth-child(3){
     top: 55%;
@@ -209,11 +205,11 @@
     right: 80px;
 }
 #hero .particles img:nth-child(5){
-    bottom: 10px;
+    top: 10px;
     right: 20vw;
-}
-.exploreMoreContainer{
-    /* background-color: red; */
+    width: 6rem;
+} 
+/*.exploreMoreContainer{
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -227,12 +223,9 @@
     background-color: transparent;
     border-radius: 50%;
     border: 40px solid black;
-    /* box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.097); */
     box-sizing: content-box;
     position: absolute;
     top: 84vh;
-    /* border-top-color: rgba(255, 255, 255, 0);
-    border-left-color:rgba(255, 255, 255, 0); */
     border-color: rgba(255, 255, 255, 0);
     rotate: 45deg;
 }
@@ -249,17 +242,31 @@
 }
 .exploreRotate{
     animation: rotate infinite linear 5s;
+} */
+.butttonsContainer{
+    width: 100vw;
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+    gap: 5rem;
+    padding: 1rem 2rem;
+    padding-top: 3rem;
 }
-
-.regNowBtn{
+.mainBtn{
     color: rgb(31, 29, 29);
     background-color: #688DE2;
-    padding: 1rem 2rem;
+    width: 21rem;
+    height: 6rem;
     border-radius: 8px;
-   
     font-weight: 600;
-}
-.regNowBtn:hover{
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    border-radius: 75px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    }
+.mainBtn:hover{
     opacity: .8;
 }
 @keyframes rotate{
@@ -272,9 +279,19 @@
 }
 @media only screen and (max-width: 1200px) {
     #hero .particles img:nth-child(3){
-        top: 80%;
+        top: 68%;
         left: 5vw;
+        width: 5rem;
     }
+    #hero .particles img:nth-child(4){
+       right: 30px;
+       top: 50%;
+    }
+    .mainBtn{
+        height: 7vw;
+        font-size: 2vw;
+    }
+
 }
 @media only screen and (max-width: 850px) {
     .bg{
@@ -282,14 +299,15 @@
         background-position: 100px 100px;
     }
     #hero{
-        justify-content: space-between;
-        height:100vh;
+        justify-content: center;
+        /* height:100vh; */
 
     }
+ 
     .heroTextContainer{
         flex-wrap: wrap;
         padding: 0;
-        margin-top: unset;
+        margin-top: 3rem;
     }
     .heroLogotWrapper{
         padding-top: 6rem;
@@ -300,37 +318,59 @@
         overflow: hidden;
         padding: 0;
     }
-    .textContainer .left h2{
+    /* .textContainer .left h2{
         font-size: 5rem;
         line-height: 5rem;
+    } */
+    .textContainer{
+        padding-bottom:2rem
+     }
+    .textContainer h3{
+        font-size: 2rem;
+        line-height: 2.5rem;
     }
     #hero .particles img:nth-child(1){
         top: 50px;
-        left: 100px;
+        left: 10px;
     }
     #hero .particles img:nth-child(2){
         top: 80px;
         right: 120px;
     }
     #hero .particles img:nth-child(3){
-      top: 48vw;
+      top: 55%;
     }
     #hero .particles img:nth-child(4){
-        top: 55%;
+        top: 65%;
         right: 80px;
     }
     #hero .particles img:nth-child(5){
-        bottom: 0px;
-        right: 0;
+       top: 10rem;
+       right: unset;
+       left: 15vw;
+       width: 4rem;
     }
-    .exploreCircle{
+    /* .exploreCircle{
         top: 90vh;
+    } */
+    .br{
+        display: none;
+    }
+    .butttonsContainer{
+        gap: 3rem;
     }
   }
 
   @media only screen and (max-width: 720px) {
     .bg{
         background-position: 100px 100px;
+    }
+    #hero{
+        /* background-color: red; */
+        padding-top: 5rem;
+    }
+    .heroTextContainer{
+        margin-top: unset;
     }
     .textContainer .left{
         width: 100%;
@@ -349,20 +389,20 @@
     }
     #hero .particles img:nth-child(3){
         top:unset;
-        left: unset;
-        right: 25%;
-        bottom: 25%;
-        scale: 1.2;
+        left: 2vw;
+        bottom: 30%;
+        scale: .9;
       }
-      #hero .particles img:nth-child(5){
-        bottom: 10px;
-        right: unset;
-        left: -20px;
-        scale: .4;
+      #hero .particles img:nth-child(4){
+        top: 60%;
+        right: 20px;
     }
-    .exploreMoreContainer{
+    /* .exploreMoreContainer{
         flex-direction: column;
         align-items: center;
+    } */
+    .butttonsContainer{
+        gap: 2rem;
     }
 
 }
@@ -399,10 +439,11 @@
         scale: .8;
     }
     #hero .particles img:nth-child(3){
-        top: 38%;
-        left: unset;
-        right: 20%;
-        scale: .8;
+        top: unset;
+        bottom: 25%;
+        left: 10px;
+        right: unset;
+        scale: .6;
     }
     #hero .particles img:nth-child(4){
         top: 65%;
@@ -410,12 +451,26 @@
         scale: .8;
     }
     #hero .particles img:nth-child(5){
-        bottom: 10px;
+        top: 15%;
         right: unset;
-        left: -20px;
-        scale: .4;
+        left: 30px;
+        scale: 1;
     }
-    .exploreCircle{
-        top: 85vh;
+    .textContainer{
+        padding: 3rem;
+        padding-bottom: 2rem;
+    }
+    .textContainer h3{
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+    }
+    .butttonsContainer{
+       flex-direction:column;
+       gap: 20px;
+    }
+    .mainBtn{
+        width: 100%;
+        font-size: 1.4rem;
+        height: 3rem;
     }
 }

@@ -14,7 +14,7 @@ import Badge from "@/components/Badge/Badge";
 
 interface BadgeData {
   full_name: string;
-  completed_tasks: string; 
+  completed_tasks: string[]; 
 }
 
 const BadgeCollection: React.FC = () => {
@@ -69,12 +69,14 @@ const BadgeCollection: React.FC = () => {
   {data && (
     <div>
       <h2 className={styles.badgeHeading}>Badges of <span>{data.full_name}</span></h2>
-      {data.completed_tasks.length>0 ? (
+      {data.completed_tasks.length > 0 ? (
         <div className={styles.badgeImgContainer}>
-          <Badge key={data.completed_tasks} task={data.completed_tasks} />
+          {data.completed_tasks.map((task, index) => (
+            <Badge key={index} task={task} />
+          ))}
         </div>
       ) : (
-        <p className={styles.noBadgeFoundTxt}>No badges have been achieved.</p>
+        <p className={styles.noBadgeFoundTxt}>No badges have been achieved yet.</p>
       )}
     </div>
   )}
