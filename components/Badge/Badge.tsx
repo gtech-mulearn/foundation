@@ -13,7 +13,7 @@ const Badge: React.FC<BadgeProps> = ({ task }) => {
   switch (task) {
     case "Scratch Mastery":
       imgUrl = scratchBadge;
-      badgeName = "Scratch Mastety";
+      badgeName = "Scratch Mastery";
       break;
     default:
       imgUrl = "";
