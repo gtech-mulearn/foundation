@@ -8,7 +8,7 @@ export interface Status {
     {
       id: 1,
       level: 1,
-      lock:false
+      lock:true
     },
     {
       id: 2,

@@ -27,17 +27,17 @@ const data: DataItem[] = [
     description: "Let’s craft your story! - with Scratch",
     bgcolor: "#F36B37",
     url: "https://mulearnfoundation.notion.site/Assignment-1-Scratch-44f0e3401a7e43cf8c783e3cfe8d8b57",
-    lock: lvl1Status ?? true 
+    lock: false
   },
-  // {
-  //   id: 2,
-  //   image: lvlImg2,
-  //   heading: "Level 2",
-  //   description: "Understanding how the web works",
-  //   bgcolor: "#688DE2",
-  //   url: "lvl2",
-  //   lock: lvl2Status ?? true 
-  // },
+  {
+    id: 2,
+    image: lvlImg2,
+    heading: "Week 1",
+    description: "Introduction to Command Line",
+    bgcolor: "#688DE2",
+    url: "https://mulearnfoundation.notion.site/Assignment-2-The-Command-Line-Karma-200-3ec9d6e3d3f14ecaa55b223aa4479276",
+    lock: false
+  },
   // {
   //   id: 3,
   //   image: lvlImg3,

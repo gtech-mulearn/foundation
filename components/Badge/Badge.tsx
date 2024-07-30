@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import scratchBadge from "../../assets/BadgeCollection/Badges/scratch.png";
+import cmdBadge from "../../assets/BadgeCollection/Badges/cmdNinja.png"
 import styles from "../../modules/BadgeCollection/badge.module.css";
 
 interface BadgeProps {
@@ -14,6 +15,10 @@ const Badge: React.FC<BadgeProps> = ({ task }) => {
     case "Scratch Mastery":
       imgUrl = scratchBadge;
       badgeName = "Scratch Mastery";
+      break;
+    case "Command Ninja":
+      imgUrl = cmdBadge;
+      badgeName = "Command Ninja";
       break;
     default:
       imgUrl = "";
