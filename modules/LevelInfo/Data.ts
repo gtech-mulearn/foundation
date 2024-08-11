@@ -41,7 +41,7 @@ const data: DataItem[] = [
   {
     id: 3,
     image: lvlImg3,
-    heading: "Level 3",
+    heading: "Week 2",
     description: "Getting Started with Git and GitHub",
     bgcolor: "#FDD549",
     url: "https://mulearnfoundation.notion.site/Assignment-3-Git-Github-Karma-400-2352f680f3ac4840a8cedf7e21209478",
