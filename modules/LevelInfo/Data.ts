@@ -38,15 +38,15 @@ const data: DataItem[] = [
     url: "https://mulearnfoundation.notion.site/Assignment-2-The-Command-Line-Karma-200-3ec9d6e3d3f14ecaa55b223aa4479276",
     lock: false
   },
-  // {
-  //   id: 3,
-  //   image: lvlImg3,
-  //   heading: "Level 3",
-  //   description: "Polish your profile and ace interviews",
-  //   bgcolor: "#FDD549",
-  //   url: "lvl3",
-  //   lock: lvl3Status ?? true 
-  // },
+  {
+    id: 3,
+    image: lvlImg3,
+    heading: "Level 3",
+    description: "Getting Started with Git and GitHub",
+    bgcolor: "#FDD549",
+    url: "https://mulearnfoundation.notion.site/Assignment-3-Git-Github-Karma-400-2352f680f3ac4840a8cedf7e21209478",
+    lock: false
+  },
   // {
   //   id: 4,
   //   image: lvlImg1,
